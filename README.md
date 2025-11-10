@@ -2,7 +2,7 @@
 
 ![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=NightFury&fontSize=60&fontAlignY=35&animation=fadeIn)
 
-## 🚀 Full-Stack Developer • API Engineer • UI Designer
+## 🚀 Full-Stack Developer • API Developer • UI Designer
 
 **9+ years of experience | NextJS & React Specialist | Cloud & SaaS Solutions**
 
