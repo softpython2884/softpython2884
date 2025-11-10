@@ -109,11 +109,8 @@ const nightFury = {
 
 ### 📈 Activity Overview
 
-![NightFury's GitHub Stats](https://github-readme-stats.vercel.app/api?username=softpython2884&show_icons=true&theme=radical&hide_border=true&include_all_commits=true&count_private=true)
-
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=softpython2884&layout=compact&theme=radical&hide_border=true&langs_count=8&exclude_repo=)
 
-![GitHub Streak](https://streak-stats.demolab.com/?user=softpython2884&theme=radical&hide_border=true)
 
 </div>
 
@@ -148,74 +145,6 @@ const nightFury = {
 
 ---
 
-## 🌟 Featured Projects
-
-### 🤖 AI & Automation Platforms
-<div align="center">
-
-[![Marcus Bot](https://github-readme-stats.vercel.app/api/pin/?username=softpython2884&repo=marcus-bot&theme=radical&show_owner=true)](https://marcusbot.fr)
-[![QuestHub](https://github-readme-stats.vercel.app/api/pin/?username=softpython2884&repo=QuestHub&theme=radical&show_owner=true)](https://github.com/softpython2884/QuestHub)
-
-</div>
-
-### 💼 Enterprise & SaaS Solutions
-<div align="center">
-
-[![SimuBourse](https://github-readme-stats.vercel.app/api/pin/?username=softpython2884&repo=SimuBourse&theme=radical&show_owner=true)](https://github.com/softpython2884/SimuBourse)
-[![FlowUp](https://github-readme-stats.vercel.app/api/pin/?username=softpython2884&repo=flowup&theme=radical&show_owner=true)](https://github.com/softpython2884/flowup)
-
-</div>
-
-### 🎮 Gaming & Interactive Experiences
-<div align="center">
-
-[![Nation Quest](https://github-readme-stats.vercel.app/api/pin/?username=softpython2884&repo=nation-quest&theme=radical&show_owner=true)](https://nationquest.fr)
-[![Mana Clash](https://github-readme-stats.vercel.app/api/pin/?username=softpython2884&repo=Mana-Clash&theme=radical&show_owner=true)](https://github.com/softpython2884/Mana-Clash)
-
-</div>
-
-### 🔧 Tools & Utilities
-<div align="center">
-
-[![Panda Ecosystem](https://github-readme-stats.vercel.app/api/pin/?username=softpython2884&repo=Panda&theme=radical&show_owner=true)](https://github.com/softpython2884/Panda)
-[![NightDev's](https://github-readme-stats.vercel.app/api/pin/?username=softpython2884&repo=NightDev-s&theme=radical&show_owner=true)](https://github.com/softpython2884/NightDev-s)
-
-</div>
-
----
-
-## 📈 Activity Graph
-
-[![NightFury's GitHub Activity Graph](https://activity-graph.herokuapp.com/graph?username=softpython2884&theme=react-dark&hide_border=true&area=true&custom_title=My%20Contributions%20Graph)](https://github.com/softpython2884)
-
----
-
-## 🎯 Currently Working On
-
-```yaml
-active_projects:
-  - name: "Marcus Bot v2"
-    status: "🚀 Production"
-    description: "AI-powered Discord bot with advanced moderation"
-    tech: ["AI", "Discord.js", "Node.js", "Python"]
-    
-  - name: "QuestHub Platform"
-    status: "🛠️ Active Development"
-    description: "OpenSource project management & collaboration platform"
-    tech: ["NextJS", "Tailwind", "PostgreSQL", "AI Integration"]
-    
-  - name: "Forge Network Infrastructure"
-    status: "🔧 Maintenance & Scaling"
-    description: "Cloud infrastructure and team collaboration tools"
-    tech: ["Docker", "Microservices", "Cloud Architecture"]
-    
-  - name: "SimuBourse Financial Platform"
-    status: "📈 Live & Updates"
-    description: "Advanced financial trading simulation platform"
-    tech: ["NextJS", "Genkit AI", "Drizzle ORM"]
-```
-
----
 
 ## 🤝 Team & Collaborations
 
@@ -256,28 +185,6 @@ I'm always interested in:
 [![Support](https://img.shields.io/badge/Support-Ko--fi-ff5e5b?style=for-the-badge&logo=kofi&logoColor=white)](https://ko-fi.com/nationquestproject)
 
 </div>
-
----
-
-## 🎨 Fun Elements & Stats
-
-### 📜 Random Dev Quote
-<div align="center">
-
-![Quote](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
-
-</div>
-
-### 🎯 Contribution Metrics
-```text
-🌙 NightFury Development Metrics:
-├── 📦 Projects Completed: 15+
-├── 🚀 Production Deployments: 8
-├── 📊 Users Impacted: 10,000+
-├── ⭐ GitHub Stars: Growing daily!
-├── 🔄 CI/CD Pipelines: 6 active
-└── 🐛 Bugs Squashed: Countless!
-```
 
 ---
 
