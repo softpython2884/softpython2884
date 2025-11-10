@@ -71,6 +71,7 @@ const nightFury = {
 </div>
 
 ---
+<div align="center">
 
 ## 🛠️ Technical Skills
 
@@ -98,6 +99,7 @@ const nightFury = {
 ![AWS](https://img.shields.io/badge/AWS-EC2/S3-FF9900?style=flat-square&logo=amazon-aws&logoColor=white)
 ![CI/CD](https://img.shields.io/badge/CI/CD-GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white)
 ![Nginx](https://img.shields.io/badge/Nginx-1.24+-009639?style=flat-square&logo=nginx&logoColor=white)
+</div>
 
 ---
 
