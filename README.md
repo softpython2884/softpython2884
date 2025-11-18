@@ -28,9 +28,6 @@ const nightFury = {
 };
 ```
 
-> **⚠️ Note on GitHub Activity:** 
-> My GitHub activity might appear incomplete as some commits from local machines/VSCode aren't properly linked to my account. The stats below only reflect direct GitHub interactions.
-
 ---
 
 ## 🎯 My Expertise
