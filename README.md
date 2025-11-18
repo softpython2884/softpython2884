@@ -129,7 +129,7 @@ const nightFury = {
 
 ### 🏅 GitHub Trophies
 
-![Trophies](https://github-profile-trophy.vercel.app/?username=softpython2884&theme=radical&no-frame=true&row=2&column=4&margin-w=15&margin-h=15)
+![Trophies](https://github-profile-trophy.vercel.app/?username=softpython2884&theme=radical&no-frame=true&row=2&column=4&margin-w=15&margin-h=15&no-bg=true)
 
 </div>
 
