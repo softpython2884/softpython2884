@@ -121,9 +121,9 @@ const nightFury = {
 
 | Metric | Count | Status |
 | :--- | :--- | :--- |
-| **Total Projects** | `15+` | 🟢 Active |
+| **Total Projects** | `60+` | 🟢 Active |
 | **Production Deployments** | `8` | 🚀 Live |
-| **Open Source Contributions** | `12` | 📦 Public |
+| **Open Source Contributions** | `32` | 📦 Public |
 | **Team Collaborations** | `3` | 👥 Forge Network |
 | **Years Experience** | `9+` | 🏆 Veteran |
 
