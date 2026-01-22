@@ -27,6 +27,7 @@ const nightFury = {
   funFact: "I turn coffee into complex systems and ideas into production-ready applications"
 };
 ```
+**Building high-scale backends with Scala. Transitioning from TypeScript to high-performance JVM systems.**
 
 ---
 
