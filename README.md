@@ -78,8 +78,8 @@ Administration et modélisation de bases de données relationnelles et NoSQL. Co
 
 </div>
 
-### 🐧 Linux *(new)* & SysAdmin 
-Administration système Linux : configuration serveur, gestion réseau, scripting shell, déploiement d'infrastructures, sécurisation et monitoring de systèmes en production.
+### 🐧 Linux & SysAdmin 
+Administration système Linux & Windows Server : configuration serveur, gestion réseau, scripting shell, déploiement d'infrastructures, sécurisation et monitoring de systèmes en production.
 
 <div align="center">
 
