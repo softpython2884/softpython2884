@@ -238,6 +238,14 @@ Portfolio professionnel et plateforme de commande de développement. Les clients
 
 </div>
 
+
+> ⚠️ **Mention très importante**  
+> Les projets visibles ici en public sont **uniquement** des projets personnels, souvent expérimentaux ou créés pour le fun.  
+>  
+> Les projets réalisés pour des clients, ainsi que les projets sérieux sur lesquels j’ai beaucoup travaillé et dont une mise en production est prévue, **ne sont pas** (ou pas encore) publiés sur GitHub.
+
+Un nouveau Grand Projet Arrive
+
 ---
 
 <div align="center">
