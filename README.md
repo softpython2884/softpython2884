@@ -317,6 +317,12 @@ planned compatibility with standard Linux apps. Polished UX, without giving up c
 ![Databases](https://img.shields.io/badge/Databases-8%2F10-22D3EE?style=flat-square&labelColor=0B0E14)
 ![SEO & Web Perf](https://img.shields.io/badge/SEO_%26_Web_Perf-9%2F10-7C3AED?style=flat-square&labelColor=0B0E14)
 
+<br/>
+
+<sub><b>Comment lire ces notes ?</b> <i>Chaque note (sur 10) évalue une capacité concrète, et non des connaissances théoriques apprises par cœur. Elle reflète l'aptitude à produire un code propre et maintenable et à gérer une mise en production en autonomie. Les évaluations sont réalisées et approuvées par OPUS sur la base de projets réels livrés.</i></sub>
+
+<br/>
+
 <sub>Verifiable at forgenet.fr/verify/OPUS-2026-Z26F2D</sub>
 
 </div>
