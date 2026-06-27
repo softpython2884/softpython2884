@@ -8,7 +8,7 @@
 
 <br/>
 
-[![Forge Network](https://img.shields.io/badge/Forge_Network-forgenet.fr-7C3AED?style=flat-square&labelColor=0B0E14&logo=rocket&logoColor=22D3EE)](https://forgenet.fr)
+[![Forge Network](https://img.shields.io/badge/Forge_Network-forgenet.fr-7C3AED?style=flat-square&labelColor=0B0E14)](https://forgenet.fr)
 [![Capibara](https://img.shields.io/badge/Capibara-capibara.fr-22D3EE?style=flat-square&labelColor=0B0E14&logo=icloud&logoColor=white)](https://capibara.fr)
 [![Marcus](https://img.shields.io/badge/Marcus-marcusbot.fr-5865F2?style=flat-square&labelColor=0B0E14&logo=discord&logoColor=white)](https://marcusbot.fr)
 [![Location](https://img.shields.io/badge/France-UTC%2B1-ffffff?style=flat-square&labelColor=0B0E14&logo=googlemaps&logoColor=22D3EE)](#)
@@ -17,7 +17,7 @@
 
 ---
 
-### 👋 About
+### <img src="https://api.iconify.design/lucide/user-round.svg?color=%237C3AED&height=22" height="22" alt="" />&nbsp; About
 
 I'm **NightFury** — a young French full-stack developer, sysadmin and OS tinkerer, and the founder
 behind **Forge Network** (`forgenet.fr`) and the **NationQuest** team. I design and ship multi-tenant
@@ -38,7 +38,7 @@ const nightFury = {
 
 ---
 
-## 🛠️ Flagship Work
+## <img src="https://api.iconify.design/lucide/rocket.svg?color=%237C3AED&height=26" height="26" alt="" />&nbsp; Flagship Work
 
 > The heavy lifting. These are the serious, production systems — the biggest one (**Colibri / Capibara**)
 > is private, so the links below point to the live products.
@@ -49,7 +49,7 @@ const nightFury = {
 <table>
 <tr><td width="850" align="center">
 
-### 🐦 Colibri — `Capibara` &nbsp;·&nbsp; <sub>PRIVATE FLAGSHIP</sub>
+### <img src="https://api.iconify.design/lucide/bird.svg?color=%237C3AED&height=24" height="24" alt="" /> Colibri — `Capibara` &nbsp;·&nbsp; <sub>PRIVATE FLAGSHIP</sub>
 
 *Multi-tenant SaaS suite — ~20 production business apps **plus** a native, Canva-like no-code site builder.*
 
@@ -81,7 +81,7 @@ CRM · Billing FR (Factur-X) · Accounting (FEC) · Shop · Inventory · Purchas
 <table>
 <tr><td width="850" align="center">
 
-### ⚙️ OPUS &nbsp;·&nbsp; <sub>forgenet.fr</sub>
+### <img src="https://api.iconify.design/lucide/layout-dashboard.svg?color=%237C3AED&height=24" height="24" alt="" /> OPUS &nbsp;·&nbsp; <sub>forgenet.fr</sub>
 
 *All-in-one developer & agency platform — workspace, cloud, certifications and a B2C marketplace in one dashboard.*
 
@@ -112,7 +112,7 @@ Workspace (projects + invoicing + installment plans) · **OPUS Cloud** (Pterodac
 <table>
 <tr><td width="850" align="center">
 
-### 🤖 Marcus &nbsp;·&nbsp; <sub>Discord platform</sub>
+### <img src="https://api.iconify.design/lucide/bot.svg?color=%237C3AED&height=24" height="24" alt="" /> Marcus &nbsp;·&nbsp; <sub>Discord platform</sub>
 
 *Modular Discord bot with AI moderation and a **visual, no-code module editor**.*
 
@@ -138,7 +138,7 @@ Workspace (projects + invoicing + installment plans) · **OPUS Cloud** (Pterodac
 
 ---
 
-## 🧪 Public Playground
+## <img src="https://api.iconify.design/lucide/package-open.svg?color=%237C3AED&height=26" height="26" alt="" />&nbsp; Public Playground
 
 > Open-source things I build for myself, for fun, or to scratch an itch. All the links below are live & public.
 
@@ -147,7 +147,7 @@ Workspace (projects + invoicing + installment plans) · **OPUS Cloud** (Pterodac
 <tr>
 <td width="425" valign="top">
 
-#### 🔐 [OpenCoperLock](https://github.com/softpython2884/OpenCoperLock)
+#### <img src="https://api.iconify.design/lucide/shield.svg?color=%237C3AED&height=20" height="20" alt="" /> [OpenCoperLock](https://github.com/softpython2884/OpenCoperLock)
 
 Self-hostable private cloud & Drive — code-gated quick-upload, remote-upload, and **hybrid encryption**: choose per-folder between server-scannable or a true zero-knowledge vault. Ships with ClamAV, WebDAV and one-click auto-update.
 
@@ -162,7 +162,7 @@ Self-hostable private cloud & Drive — code-gated quick-upload, remote-upload, 
 </td>
 <td width="425" valign="top">
 
-#### 🧠 [Gemini-Assistant](https://github.com/softpython2884/Gemini-Assistant)
+#### <img src="https://api.iconify.design/lucide/brain.svg?color=%237C3AED&height=20" height="20" alt="" /> [Gemini-Assistant](https://github.com/softpython2884/Gemini-Assistant)
 
 A clipboard-driven AI assistant that lives invisibly in the background. Hotkeys capture context from *any* app, ask Gemini, and paste the answer right at your cursor — with automatic model fallback when you hit a quota.
 
@@ -176,7 +176,7 @@ A clipboard-driven AI assistant that lives invisibly in the background. Hotkeys 
 <tr>
 <td width="425" valign="top">
 
-#### ⛓️ [NightSlavery](https://github.com/softpython2884/NightSlavery)
+#### <img src="https://api.iconify.design/lucide/link.svg?color=%237C3AED&height=20" height="20" alt="" /> [NightSlavery](https://github.com/softpython2884/NightSlavery)
 
 A deep Minecraft Fabric mod (1.21, Java 21) inspired by *Kenshi*: a full capture system with a `FREE → K.O. → imprisoned → enslaved` state machine, cages, a control scepter, escape & rebellion mechanics, and gamerule-based anti-grief safeguards.
 
@@ -188,7 +188,7 @@ A deep Minecraft Fabric mod (1.21, Java 21) inspired by *Kenshi*: a full capture
 </td>
 <td width="425" valign="top">
 
-#### 🎮 [Macro](https://github.com/softpython2884/Macro)
+#### <img src="https://api.iconify.design/lucide/gamepad-2.svg?color=%237C3AED&height=20" height="20" alt="" /> [Macro](https://github.com/softpython2884/Macro)
 
 An older but fun one: a web-based home-console layer with **Xbox-controller navigation**, local game/media launching and streaming shortcuts, wrapped in a space-themed UI — bridged to the OS through a Python hotkey listener.
 
@@ -203,7 +203,7 @@ An older but fun one: a web-based home-console layer with **Xbox-controller navi
 <tr>
 <td width="850" colspan="2" align="center" valign="top">
 
-#### 🎛️ StreamDeck Utilities &nbsp;·&nbsp; one-key **Gaming ↔ Office** switch
+#### <img src="https://api.iconify.design/lucide/sliders-horizontal.svg?color=%237C3AED&height=20" height="20" alt="" /> StreamDeck Utilities &nbsp;·&nbsp; one-key **Gaming ↔ Office** switch
 
 **[MouseMode](https://github.com/softpython2884/MouseMode)** — flips Windows mouse settings (sensitivity, acceleration…) between a Gaming and a Bureautique/Office profile in a single press. &nbsp;•&nbsp; **[AudioSwitcher](https://github.com/softpython2884/AudioSwitcher)** — switches the default audio output *and* moves every already-running app onto the new device, with an on-screen overlay confirmation. Paired on a Stream Deck, they make the tedious game↔work context switch instant.
 
@@ -211,8 +211,8 @@ An older but fun one: a web-based home-console layer with **Xbox-controller navi
 ![Windows](https://img.shields.io/badge/Windows-000?style=flat-square&labelColor=0B0E14&logo=windows&logoColor=0078D6)
 ![Elgato](https://img.shields.io/badge/Stream_Deck-000?style=flat-square&labelColor=0B0E14&logo=elgato&logoColor=white)
 
-[![MouseMode](https://img.shields.io/badge/🖱_MouseMode-181717?style=flat-square&labelColor=0B0E14&logo=github)](https://github.com/softpython2884/MouseMode)
-[![AudioSwitcher](https://img.shields.io/badge/🔊_AudioSwitcher-181717?style=flat-square&labelColor=0B0E14&logo=github)](https://github.com/softpython2884/AudioSwitcher)
+[![MouseMode](https://img.shields.io/badge/MouseMode-181717?style=flat-square&labelColor=0B0E14&logo=github)](https://github.com/softpython2884/MouseMode)
+[![AudioSwitcher](https://img.shields.io/badge/AudioSwitcher-181717?style=flat-square&labelColor=0B0E14&logo=github)](https://github.com/softpython2884/AudioSwitcher)
 
 </td>
 </tr>
@@ -223,18 +223,18 @@ An older but fun one: a web-based home-console layer with **Xbox-controller navi
 
 <div align="center">
 
-> ### 🔒 What you see here is the playground.
+> ### <img src="https://api.iconify.design/lucide/lock.svg?color=%237C3AED&height=22" height="22" alt="" /> What you see here is the playground.
 > The public repos above are personal, experimental, and built for fun. My serious client work and
 > biggest production systems — **Colibri / Capibara** chief among them — are private and unpublished.
 > The real heavy lifting happens off GitHub.
 >
-> **Un nouveau Grand Projet arrive. 🚀**
+> **Un nouveau Grand Projet arrive.**
 
 </div>
 
 ---
 
-## 🔬 Also in the lab
+## <img src="https://api.iconify.design/lucide/flask-conical.svg?color=%237C3AED&height=26" height="26" alt="" />&nbsp; Also in the lab
 
 <div align="center">
 
@@ -249,7 +249,7 @@ An older but fun one: a web-based home-console layer with **Xbox-controller navi
 
 ---
 
-## 🖥️ Custom Linux Distribution &nbsp;·&nbsp; <sub>long-running personal project</sub>
+## <img src="https://api.iconify.design/lucide/monitor.svg?color=%237C3AED&height=26" height="26" alt="" />&nbsp; Custom Linux Distribution &nbsp;·&nbsp; <sub>long-running personal project</sub>
 
 > **The goal:** Arch-level configurability with Chromebook-level ease of use.
 
@@ -259,7 +259,7 @@ planned compatibility with standard Linux apps. Polished UX, without giving up c
 
 ---
 
-## 🧰 Tech Stack
+## <img src="https://api.iconify.design/lucide/wrench.svg?color=%237C3AED&height=26" height="26" alt="" />&nbsp; Tech Stack
 
 <div align="center">
 
@@ -302,22 +302,38 @@ planned compatibility with standard Linux apps. Polished UX, without giving up c
 
 ---
 
-## 📊 GitHub Stats
+## <img src="https://api.iconify.design/lucide/badge-check.svg?color=%237C3AED&height=26" height="26" alt="" />&nbsp; Certified
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=softpython2884&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0B0E14&icon_color=22D3EE&title_color=7C3AED&count_private=true" alt="stats" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=softpython2884&layout=compact&theme=tokyonight&hide_border=true&bg_color=0B0E14&title_color=7C3AED&langs_count=8" alt="top languages" />
+[![OPUS Certified](https://img.shields.io/badge/OPUS_Certified-Ma%C3%AEtrise_Full--Stack_%C2%B7_DevOps_%C2%B7_Syst%C3%A8mes-7C3AED?style=for-the-badge&labelColor=0B0E14)](https://forgenet.fr/verify/OPUS-2026-Z26F2D)
 
 <br/>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=softpython2884&theme=tokyonight&hide_border=true&background=0B0E14&ring=7C3AED&fire=22D3EE&currStreakLabel=22D3EE" alt="streak" />
+![Frontend](https://img.shields.io/badge/Frontend-9%2F10-22D3EE?style=flat-square&labelColor=0B0E14)
+![Backend](https://img.shields.io/badge/Backend-8%2F10-7C3AED?style=flat-square&labelColor=0B0E14)
+![DevOps](https://img.shields.io/badge/DevOps-10%2F10-22D3EE?style=flat-square&labelColor=0B0E14)
+![Sysadmin & Network](https://img.shields.io/badge/Sysadmin_%26_Network-10%2F10-7C3AED?style=flat-square&labelColor=0B0E14)
+![Databases](https://img.shields.io/badge/Databases-8%2F10-22D3EE?style=flat-square&labelColor=0B0E14)
+![SEO & Web Perf](https://img.shields.io/badge/SEO_%26_Web_Perf-9%2F10-7C3AED?style=flat-square&labelColor=0B0E14)
+
+<sub>Verifiable at forgenet.fr/verify/OPUS-2026-Z26F2D</sub>
 
 </div>
 
 ---
 
-## 📫 Contact
+## <img src="https://api.iconify.design/lucide/languages.svg?color=%237C3AED&height=26" height="26" alt="" />&nbsp; Most-used languages
+
+<div align="center">
+
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=softpython2884&layout=compact&theme=tokyonight&hide_border=true&bg_color=0B0E14&title_color=7C3AED&langs_count=10" alt="top languages" />
+
+</div>
+
+---
+
+## <img src="https://api.iconify.design/lucide/mail.svg?color=%237C3AED&height=26" height="26" alt="" />&nbsp; Contact
 
 <div align="center">
 
@@ -327,14 +343,13 @@ planned compatibility with standard Linux apps. Polished UX, without giving up c
 
 [![Discord](https://img.shields.io/badge/Discord-nightfury__httyd-5865F2?style=for-the-badge&labelColor=0B0E14&logo=discord&logoColor=white)](https://discord.com/users/nightfury_httyd)
 [![Ko-fi](https://img.shields.io/badge/Support-Ko--fi-FF5E5B?style=for-the-badge&labelColor=0B0E14&logo=kofi&logoColor=white)](https://ko-fi.com/nationquestproject)
-[![GitHub Alt](https://img.shields.io/badge/Alt-SoftPython2778-181717?style=for-the-badge&labelColor=0B0E14&logo=github)](https://github.com/SoftPython2778)
 
 </div>
 
 <div align="center">
 
-### ⚡ *"From the kernel up — turning complex systems into things people can actually click."*
+### *"From the kernel up — turning complex systems into things people can actually click."*
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1B2A4A,100:0B0E14&height=120&section=footer&text=Thanks%20for%20visiting%20%F0%9F%9A%80&fontColor=ffffff&fontSize=20&fontAlignY=70" width="100%" alt="footer" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1B2A4A,100:0B0E14&height=120&section=footer&text=Thanks%20for%20visiting&fontColor=ffffff&fontSize=20&fontAlignY=70" width="100%" alt="footer" />
