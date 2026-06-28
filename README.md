@@ -32,7 +32,6 @@ const nightFury = {
   stack:   ["TypeScript", "Next.js", "React", "Node", "PostgreSQL", "Docker", "Linux"],
   now:     ["Colibri / Capibara (SaaS suite)", "a custom Linux distro", "a new Grand Projet"],
   learning:"Scala & high-performance JVM systems",
-  motto:   "From the kernel up — turning complex systems into things people can click.",
 };
 ```
 
@@ -138,28 +137,46 @@ Workspace (projects + invoicing + installment plans) · **OPUS Cloud** (Pterodac
 
 ---
 
-## <img src="https://api.iconify.design/lucide/package-open.svg?color=%237C3AED&height=26" height="26" alt="" />&nbsp; Public Playground
+## <img src="https://api.iconify.design/lucide/package-open.svg?color=%237C3AED&height=26" height="26" alt="" />&nbsp; Open Source
 
-> Open-source things I build for myself, for fun, or to scratch an itch. All the links below are live & public.
+> Most of my public repos are experiments and weekend builds — but one of them is the real deal.
 
 <div align="center">
+
+<!-- ============== OPENCOPERLOCK — open-source flagship ============== -->
+<table>
+<tr><td width="850" align="center">
+
+### <img src="https://api.iconify.design/lucide/shield.svg?color=%237C3AED&height=24" height="24" alt="" /> OpenCoperLock &nbsp;·&nbsp; <sub>BIGGEST OPEN-SOURCE PROJECT</sub>
+
+*Self-hostable, privacy-first private cloud & Drive — end-to-end, yours to host.*
+
+![TypeScript](https://img.shields.io/badge/TypeScript-000?style=flat-square&labelColor=0B0E14&logo=typescript&logoColor=3178C6)
+![Next.js](https://img.shields.io/badge/Next.js_15-000?style=flat-square&labelColor=0B0E14&logo=nextdotjs)
+![Fastify](https://img.shields.io/badge/Fastify_5-000?style=flat-square&labelColor=0B0E14&logo=fastify)
+![Prisma](https://img.shields.io/badge/Prisma_6-000?style=flat-square&labelColor=0B0E14&logo=prisma)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-000?style=flat-square&labelColor=0B0E14&logo=postgresql&logoColor=4169E1)
+![Docker](https://img.shields.io/badge/Docker-000?style=flat-square&labelColor=0B0E14&logo=docker&logoColor=2496ED)
+
+A real Drive (folders, sharing, quotas, collaborative Shared Spaces) with three standout features: code-gated **Quick-Upload** drop zones, server-side **Remote-Upload** from a URL, and **hybrid encryption** — a per-folder choice between AES-256-GCM (server-scannable) or a true **zero-knowledge** client vault.
+
+<sub>Built-in ClamAV scanning · WebDAV mounting · personal-token API · one-click GitHub self-update · pnpm monorepo</sub>
+
+![arch](https://img.shields.io/badge/Architecture-pnpm_monorepo-7C3AED?style=flat-square&labelColor=0B0E14)
+![files](https://img.shields.io/badge/TS_files-~141-22D3EE?style=flat-square&labelColor=0B0E14)
+![enc](https://img.shields.io/badge/Encryption-AES--256--GCM-7C3AED?style=flat-square&labelColor=0B0E14)
+![hash](https://img.shields.io/badge/Hashing-Argon2-22D3EE?style=flat-square&labelColor=0B0E14)
+
+[![Repo](https://img.shields.io/badge/▶_GitHub-181717?style=for-the-badge&labelColor=0B0E14&logo=github)](https://github.com/softpython2884/OpenCoperLock)
+[![Live](https://img.shields.io/badge/copper.forgenet.fr-22D3EE?style=for-the-badge&labelColor=0B0E14)](https://copper.forgenet.fr)
+
+</td></tr>
+</table>
+
+<sub><b>More public builds & experiments</b></sub>
+
 <table>
 <tr>
-<td width="425" valign="top">
-
-#### <img src="https://api.iconify.design/lucide/shield.svg?color=%237C3AED&height=20" height="20" alt="" /> [OpenCoperLock](https://github.com/softpython2884/OpenCoperLock)
-
-Self-hostable private cloud & Drive — code-gated quick-upload, remote-upload, and **hybrid encryption**: choose per-folder between server-scannable or a true zero-knowledge vault. Ships with ClamAV, WebDAV and one-click auto-update.
-
-![TS](https://img.shields.io/badge/TypeScript-000?style=flat-square&labelColor=0B0E14&logo=typescript&logoColor=3178C6)
-![Next](https://img.shields.io/badge/Next.js-000?style=flat-square&labelColor=0B0E14&logo=nextdotjs)
-![Fastify](https://img.shields.io/badge/Fastify-000?style=flat-square&labelColor=0B0E14&logo=fastify)
-![PG](https://img.shields.io/badge/Postgres-000?style=flat-square&labelColor=0B0E14&logo=postgresql&logoColor=4169E1)
-
-[![Repo](https://img.shields.io/badge/Code-181717?style=flat-square&labelColor=0B0E14&logo=github)](https://github.com/softpython2884/OpenCoperLock)
-[![Live](https://img.shields.io/badge/copper.forgenet.fr-7C3AED?style=flat-square&labelColor=0B0E14)](https://copper.forgenet.fr)
-
-</td>
 <td width="425" valign="top">
 
 #### <img src="https://api.iconify.design/lucide/brain.svg?color=%237C3AED&height=20" height="20" alt="" /> [Gemini-Assistant](https://github.com/softpython2884/Gemini-Assistant)
@@ -172,8 +189,6 @@ A clipboard-driven AI assistant that lives invisibly in the background. Hotkeys 
 [![Repo](https://img.shields.io/badge/Code-181717?style=flat-square&labelColor=0B0E14&logo=github)](https://github.com/softpython2884/Gemini-Assistant)
 
 </td>
-</tr>
-<tr>
 <td width="425" valign="top">
 
 #### <img src="https://api.iconify.design/lucide/link.svg?color=%237C3AED&height=20" height="20" alt="" /> [NightSlavery](https://github.com/softpython2884/NightSlavery)
@@ -186,6 +201,8 @@ A deep Minecraft Fabric mod (1.21, Java 21) inspired by *Kenshi*: a full capture
 [![Repo](https://img.shields.io/badge/Code-181717?style=flat-square&labelColor=0B0E14&logo=github)](https://github.com/softpython2884/NightSlavery)
 
 </td>
+</tr>
+<tr>
 <td width="425" valign="top">
 
 #### <img src="https://api.iconify.design/lucide/gamepad-2.svg?color=%237C3AED&height=20" height="20" alt="" /> [Macro](https://github.com/softpython2884/Macro)
@@ -199,17 +216,13 @@ An older but fun one: a web-based home-console layer with **Xbox-controller navi
 [![Repo](https://img.shields.io/badge/Code-181717?style=flat-square&labelColor=0B0E14&logo=github)](https://github.com/softpython2884/Macro)
 
 </td>
-</tr>
-<tr>
-<td width="850" colspan="2" align="center" valign="top">
+<td width="425" valign="top">
 
-#### <img src="https://api.iconify.design/lucide/sliders-horizontal.svg?color=%237C3AED&height=20" height="20" alt="" /> StreamDeck Utilities &nbsp;·&nbsp; one-key **Gaming ↔ Office** switch
+#### <img src="https://api.iconify.design/lucide/sliders-horizontal.svg?color=%237C3AED&height=20" height="20" alt="" /> StreamDeck utilities
 
-**[MouseMode](https://github.com/softpython2884/MouseMode)** — flips Windows mouse settings (sensitivity, acceleration…) between a Gaming and a Bureautique/Office profile in a single press. &nbsp;•&nbsp; **[AudioSwitcher](https://github.com/softpython2884/AudioSwitcher)** — switches the default audio output *and* moves every already-running app onto the new device, with an on-screen overlay confirmation. Paired on a Stream Deck, they make the tedious game↔work context switch instant.
+One-key **Gaming ↔ Office** switch: **MouseMode** (Windows mouse profiles) and **AudioSwitcher** (default output + moves every running app onto the new device, with an overlay). PowerShell, paired on a Stream Deck.
 
 ![PowerShell](https://img.shields.io/badge/PowerShell-000?style=flat-square&labelColor=0B0E14&logo=powershell&logoColor=5391FE)
-![Windows](https://img.shields.io/badge/Windows-000?style=flat-square&labelColor=0B0E14&logo=windows&logoColor=0078D6)
-![Elgato](https://img.shields.io/badge/Stream_Deck-000?style=flat-square&labelColor=0B0E14&logo=elgato&logoColor=white)
 
 [![MouseMode](https://img.shields.io/badge/MouseMode-181717?style=flat-square&labelColor=0B0E14&logo=github)](https://github.com/softpython2884/MouseMode)
 [![AudioSwitcher](https://img.shields.io/badge/AudioSwitcher-181717?style=flat-square&labelColor=0B0E14&logo=github)](https://github.com/softpython2884/AudioSwitcher)
@@ -223,10 +236,10 @@ An older but fun one: a web-based home-console layer with **Xbox-controller navi
 
 <div align="center">
 
-> ### <img src="https://api.iconify.design/lucide/lock.svg?color=%237C3AED&height=22" height="22" alt="" /> What you see here is the playground.
-> The public repos above are personal, experimental, and built for fun. My serious client work and
-> biggest production systems — **Colibri / Capibara** chief among them — are private and unpublished.
-> The real heavy lifting happens off GitHub.
+> ### <img src="https://api.iconify.design/lucide/lock.svg?color=%237C3AED&height=22" height="22" alt="" /> Public is the playground — mostly.
+> Most of my public repos are personal, experimental or built for fun (**OpenCoperLock** being my main
+> serious open-source project). My biggest client work and production systems — **Colibri / Capibara**
+> chief among them — stay private and unpublished. The real heavy lifting happens off GitHub.
 >
 > **Un nouveau Grand Projet arrive.**
 
@@ -319,7 +332,7 @@ planned compatibility with standard Linux apps. Polished UX, without giving up c
 
 <br/>
 
-<sub><b>Comment lire ces notes ?</b> <i>Chaque note (sur 10) évalue une capacité concrète, et non des connaissances théoriques apprises par cœur. Elle reflète l'aptitude à produire un code propre et maintenable et à gérer une mise en production en autonomie. Les évaluations sont réalisées et approuvées par OPUS sur la base de projets réels livrés.</i></sub>
+<sub><b>How to read these scores?</b> <i>Each score (out of 10) measures a concrete ability — not theory learned by heart. It reflects the ability to write clean, maintainable code and to handle a production deployment autonomously. Assessments are carried out and approved by OPUS on the basis of real, delivered projects.</i></sub>
 
 <br/>
 
@@ -354,7 +367,7 @@ planned compatibility with standard Linux apps. Polished UX, without giving up c
 
 <div align="center">
 
-### *"From the kernel up — turning complex systems into things people can actually click."*
+### *From the kernel up.*
 
 </div>
 
