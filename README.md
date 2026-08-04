@@ -3,7 +3,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0B0E14,100:1B2A4A&height=210&section=header&text=NightFury&fontColor=ffffff&fontSize=66&fontAlignY=34&desc=Full-Stack%20%C2%B7%20SysAdmin%20%C2%B7%20OS%20Builder&descSize=18&descAlignY=58&animation=fadeIn" width="100%" alt="NightFury" />
 
 <a href="https://forgenet.fr">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=900&color=22D3EE&center=true&vCenter=true&width=760&lines=Founder+%40+Forge+Network+%E2%80%94+forgenet.fr;Building+multi-tenant+SaaS+from+the+kernel+up;~20+production+apps+%C2%B7+50%2B+models+%C2%B7+4+languages;Public+repos+are+my+playground.+The+real+work+is+private." alt="What I do" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=900&color=22D3EE&center=true&vCenter=true&width=760&lines=Founder+%40+Forge+Network+%E2%80%94+forgenet.fr;Building+multi-tenant+SaaS+from+the+kernel+up;~20+production+apps+%C2%B7+260%2B+models+%C2%B7+4+languages;Public+repos+are+my+playground.+The+real+work+is+private." alt="What I do" />
 </a>
 
 <br/>
@@ -60,15 +60,25 @@ const nightFury = {
 ![Stripe](https://img.shields.io/badge/Stripe-000?style=flat-square&labelColor=0B0E14&logo=stripe&logoColor=635BFF)
 ![Docker](https://img.shields.io/badge/Docker-000?style=flat-square&labelColor=0B0E14&logo=docker&logoColor=2496ED)
 
-CRM · Billing FR (Factur-X) · Accounting (FEC) · Shop · Inventory · Purchasing · Planning · Support · Blog · Newsletter · Projects · HR
+CRM · Billing FR (Factur-X) · Accounting (FEC) · Shop · Inventory · Purchasing · Planning · Ticketing · Support · Projects · HR · Formation · Blog · Newsletter · Chat · Wiki & Storage
 
-<sub>Schema-per-tenant isolation · RBAC revalidated in DB · Meilisearch · MinIO · Stalwart mail + webmail · PowerDNS across 2 countries · marketplace with 60–80% rev-share</sub>
+<sub>Schema-per-tenant isolation · RBAC revalidated in DB · Meilisearch · MinIO · Stalwart mail + webmail · self-hosted Jitsi video · Stripe Connect marketplace</sub>
 
-![files](https://img.shields.io/badge/TS_files-~847-7C3AED?style=flat-square&labelColor=0B0E14)
-![loc](https://img.shields.io/badge/LOC-~72k-22D3EE?style=flat-square&labelColor=0B0E14)
-![models](https://img.shields.io/badge/Prisma_models-50-7C3AED?style=flat-square&labelColor=0B0E14)
+![files](https://img.shields.io/badge/TS_files-~1%2C720-7C3AED?style=flat-square&labelColor=0B0E14)
+![loc](https://img.shields.io/badge/LOC-~214k-22D3EE?style=flat-square&labelColor=0B0E14)
+![models](https://img.shields.io/badge/Prisma_models-263-7C3AED?style=flat-square&labelColor=0B0E14)
+![migrations](https://img.shields.io/badge/Tenant_migrations-141-22D3EE?style=flat-square&labelColor=0B0E14)
+![tests](https://img.shields.io/badge/Tests-2%2C800%2B-7C3AED?style=flat-square&labelColor=0B0E14)
 ![langs](https://img.shields.io/badge/Languages-4-22D3EE?style=flat-square&labelColor=0B0E14)
-![svc](https://img.shields.io/badge/Docker_services-13-7C3AED?style=flat-square&labelColor=0B0E14)
+![svc](https://img.shields.io/badge/Docker_services-17-7C3AED?style=flat-square&labelColor=0B0E14)
+![team](https://img.shields.io/badge/Team-~46_people-22D3EE?style=flat-square&labelColor=0B0E14)
+
+<br/>
+
+![cost](https://img.shields.io/badge/Est._build_cost-~1.5M%E2%82%AC-F59E0B?style=flat-square&labelColor=0B0E14)
+![effort](https://img.shields.io/badge/Est._effort-~118_person--months-F59E0B?style=flat-square&labelColor=0B0E14)
+
+<sub><i>Payment, security and compliance code is 11 % of the lines — but 26 % of the cost.</i></sub>
 
 [![Visit Capibara](https://img.shields.io/badge/▶_capibara.fr-7C3AED?style=for-the-badge&labelColor=0B0E14)](https://capibara.fr)
 [![Forge Network](https://img.shields.io/badge/forgenet.fr-22D3EE?style=for-the-badge&labelColor=0B0E14)](https://forgenet.fr)
@@ -95,11 +105,17 @@ Workspace (projects + invoicing + installment plans) · **OPUS Cloud** (Pterodac
 
 <sub>Certification Program (27 tracks × 4 levels × 5 real-project briefs = 540 assessments) · OPUS Market (Stripe + DRM licenses) · News + RSS · 6-brand ecosystem with animated SVG mascots</sub>
 
-![models](https://img.shields.io/badge/Prisma_models-~69-7C3AED?style=flat-square&labelColor=0B0E14)
-![loc](https://img.shields.io/badge/LOC-~55.5k-22D3EE?style=flat-square&labelColor=0B0E14)
-![routes](https://img.shields.io/badge/API_routes-46%2B-7C3AED?style=flat-square&labelColor=0B0E14)
+![models](https://img.shields.io/badge/Prisma_models-88-7C3AED?style=flat-square&labelColor=0B0E14)
+![loc](https://img.shields.io/badge/LOC-~93k-22D3EE?style=flat-square&labelColor=0B0E14)
+![routes](https://img.shields.io/badge/API_routes-54-7C3AED?style=flat-square&labelColor=0B0E14)
 ![cert](https://img.shields.io/badge/Assessments-540-22D3EE?style=flat-square&labelColor=0B0E14)
 ![brands](https://img.shields.io/badge/Brands-6-7C3AED?style=flat-square&labelColor=0B0E14)
+![team](https://img.shields.io/badge/Team-14_people-22D3EE?style=flat-square&labelColor=0B0E14)
+
+<br/>
+
+![cost](https://img.shields.io/badge/Est._build_cost-~650k%E2%82%AC-F59E0B?style=flat-square&labelColor=0B0E14)
+![effort](https://img.shields.io/badge/Est._effort-~50_person--months-F59E0B?style=flat-square&labelColor=0B0E14)
 
 [![Live](https://img.shields.io/badge/▶_forgenet.fr-7C3AED?style=for-the-badge&labelColor=0B0E14)](https://forgenet.fr)
 [![Console](https://img.shields.io/badge/console.forgenet.fr-22D3EE?style=for-the-badge&labelColor=0B0E14)](https://console.forgenet.fr)
@@ -122,16 +138,24 @@ Workspace (projects + invoicing + installment plans) · **OPUS Cloud** (Pterodac
 
 94 commands · 75+ modules · AI moderation · a **React Flow** visual editor (80+ blocks, live Discord-style preview) · 30 AI flows · Stripe premium
 
-![files](https://img.shields.io/badge/Files-~567-7C3AED?style=flat-square&labelColor=0B0E14)
-![loc](https://img.shields.io/badge/LOC-~102k-22D3EE?style=flat-square&labelColor=0B0E14)
+![files](https://img.shields.io/badge/Files-~579-7C3AED?style=flat-square&labelColor=0B0E14)
+![loc](https://img.shields.io/badge/LOC-~105k-22D3EE?style=flat-square&labelColor=0B0E14)
 ![cmd](https://img.shields.io/badge/Commands-94-7C3AED?style=flat-square&labelColor=0B0E14)
 ![flows](https://img.shields.io/badge/AI_flows-30-22D3EE?style=flat-square&labelColor=0B0E14)
 ![mods](https://img.shields.io/badge/Modules-75%2B-7C3AED?style=flat-square&labelColor=0B0E14)
+![team](https://img.shields.io/badge/Team-13_people-22D3EE?style=flat-square&labelColor=0B0E14)
+
+<br/>
+
+![cost](https://img.shields.io/badge/Est._build_cost-~865k%E2%82%AC-F59E0B?style=flat-square&labelColor=0B0E14)
+![effort](https://img.shields.io/badge/Est._effort-~67_person--months-F59E0B?style=flat-square&labelColor=0B0E14)
 
 [![Live](https://img.shields.io/badge/▶_marcusbot.fr-7C3AED?style=for-the-badge&labelColor=0B0E14)](https://marcusbot.fr)
 
 </td></tr>
 </table>
+
+<sub><b>About the build-cost estimates</b> — <i>these figures estimate what it would cost to rebuild each project from scratch with a senior team (10–11 years of web development on average) at the 2026 French senior market rate (~650 €/day). A person-month means one person working full time for one month — it is a unit of effort, not a headcount: ~118 person-months is what a team of ~46 delivers in about two and a half months. They are computed, not guessed: every file is classified into a zone — payment, security, compliance, integrations, business logic, UI, data model, infra, tests, docs — and each zone carries its own productivity rate, because a line of billing code (idempotency, webhooks, reconciliation, disputes) costs far more than a line of CRUD. Git history then adds the code that was written and later rewritten or thrown away — abandoned work cost time all the same — plus an overhead factor for what leaves no artifact: architecture decisions, deployments and ops. Estimates of value delivered, not amounts actually spent — the estimator itself lives in <a href="tools/estimate.py"><code>tools/estimate.py</code></a>, so the numbers can be re-run and checked.</i></sub>
 
 </div>
 
@@ -163,9 +187,16 @@ A real Drive (folders, sharing, quotas, collaborative Shared Spaces) with three 
 <sub>Built-in ClamAV scanning · WebDAV mounting · personal-token API · one-click GitHub self-update · pnpm monorepo</sub>
 
 ![arch](https://img.shields.io/badge/Architecture-pnpm_monorepo-7C3AED?style=flat-square&labelColor=0B0E14)
-![files](https://img.shields.io/badge/TS_files-~141-22D3EE?style=flat-square&labelColor=0B0E14)
+![files](https://img.shields.io/badge/TS_files-~148-22D3EE?style=flat-square&labelColor=0B0E14)
 ![enc](https://img.shields.io/badge/Encryption-AES--256--GCM-7C3AED?style=flat-square&labelColor=0B0E14)
 ![hash](https://img.shields.io/badge/Hashing-Argon2-22D3EE?style=flat-square&labelColor=0B0E14)
+
+<br/>
+
+![cost](https://img.shields.io/badge/Est._build_cost-~155k%E2%82%AC-F59E0B?style=flat-square&labelColor=0B0E14)
+![effort](https://img.shields.io/badge/Est._effort-~12_person--months-F59E0B?style=flat-square&labelColor=0B0E14)
+
+<sub><i>Same estimate method as above.</i></sub>
 
 [![Repo](https://img.shields.io/badge/▶_GitHub-181717?style=for-the-badge&labelColor=0B0E14&logo=github)](https://github.com/softpython2884/OpenCoperLock)
 [![Live](https://img.shields.io/badge/copper.forgenet.fr-22D3EE?style=for-the-badge&labelColor=0B0E14)](https://copper.forgenet.fr)
