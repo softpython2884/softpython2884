@@ -48,13 +48,13 @@ ZONES = [
     ("infra", "Infra, DevOps & déploiement", 14,
      r"(^|/)(dockerfile|docker-compose)|(^|/)docker/|caddyfile|(^|/)nginx|"
      r"(^|/)\.github/workflows/|(^|/)scripts?/|\.(sh|ps1|bat)$|(^|/)deploy/|\.toml$|"
-     r"(^|/)(prometheus|grafana|loki)"),
+     r"(^|/)(prometheus|grafana|loki)|(^|/)(android|ios|windows|linux|macos)/|gradle|\.kts$"),
     ("compliance", "Juridique & conformité", 6,
      r"factur|(^|/|-)fec(-|/|\.|$)|rgpd|gdpr|duerp|qualiopi|(^|[/-])bpf([/-]|\.|$)|cnil|"
      # NB : « report » et « moderation » ont été retirés — trop génériques : ils
      # attrapaient les commandes de modération Discord de Marcus, qui sont des
      # fonctionnalités produit ordinaires, pas du travail juridique.
-     r"legal|conformite|registre|dsa|lcen|mentions|cgv|cgu|privacy|consent|opt-out|"
+     r"legal|conformite|reglementation|reglementaire|registre|dsa|lcen|mentions|cgv|cgu|privacy|consent|opt-out|"
      r"retention|anonymi|audit-log|auditlog"),
     ("money", "Paiement, facturation & comptabilité", 9,
      r"stripe|billing|invoice|payment|payout|refund|checkout|pricing|subscri|quote|"
@@ -68,11 +68,11 @@ ZONES = [
      r"ovh|(^|[/-])dns|powerdns|(^|[/-])mail|smtp|imap|stalwart|roundcube|jitsi|visio|"
      r"pterodactyl|discord|gemini|genkit|(^|/)ai/|(^|[/-])ai[-.]|webhook|meili|minio|"
      r"(^|[/-])s3|storage|sirene|(^|[/-])ics|(^|[/-])rss|oauth|sso|pubsub|realtime|"
-     r"push|sms|brevo|nodemailer|websocket|ffmpeg|canvas|pdf"),
+     r"push|sms|brevo|nodemailer|websocket|ffmpeg|canvas|pdf|(^|/)sync/|sauvegarde|backup"),
     ("ui", "Interface & composants", 30,
-     r"\.(tsx|jsx|css|scss|html|svg)$|(^|/)(components|pages|views|app)/"),
+     r"\.(tsx|jsx|css|scss|html|svg)$|(^|/)(components|pages|views|app|ui|ecrans|composants)/"),
     ("server", "Logique métier serveur", 20,
-     r"\.(ts|js|mjs|cjs|py|java)$"),
+     r"\.(ts|js|mjs|cjs|py|java|dart|kt)$"),
     ("other", "Divers", 40, r".*"),
 ]
 

@@ -3,7 +3,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0B0E14,100:1B2A4A&height=210&section=header&text=NightFury&fontColor=ffffff&fontSize=66&fontAlignY=34&desc=Full-Stack%20%C2%B7%20SysAdmin%20%C2%B7%20OS%20Builder&descSize=18&descAlignY=58&animation=fadeIn" width="100%" alt="NightFury" />
 
 <a href="https://forgenet.fr">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=900&color=22D3EE&center=true&vCenter=true&width=760&lines=Founder+%40+Forge+Network+%E2%80%94+forgenet.fr;Building+multi-tenant+SaaS+from+the+kernel+up;~20+production+apps+%C2%B7+260%2B+models+%C2%B7+4+languages;Public+repos+are+my+playground.+The+real+work+is+private." alt="What I do" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=900&color=22D3EE&center=true&vCenter=true&width=760&lines=Founder+%40+Forge+Network+%E2%80%94+forgenet.fr;Building+multi-tenant+SaaS+from+the+kernel+up;~20+production+apps+%C2%B7+300%2B+models+%C2%B7+4+languages;Public+repos+are+my+playground.+The+real+work+is+private." alt="What I do" />
 </a>
 
 <br/>
@@ -39,8 +39,8 @@ const nightFury = {
 
 ## <img src="https://api.iconify.design/lucide/rocket.svg?color=%237C3AED&height=26" height="26" alt="" />&nbsp; Flagship Work
 
-> The heavy lifting. These are the serious, production systems — the biggest one (**Colibri / Capibara**)
-> is private, so the links below point to the live products.
+> The heavy lifting. These are the serious, production systems. Most of them are private,
+> so the links below point to the live products and downloads.
 
 <div align="center">
 
@@ -64,21 +64,21 @@ CRM · Billing FR (Factur-X) · Accounting (FEC) · Shop · Inventory · Purchas
 
 <sub>Schema-per-tenant isolation · RBAC revalidated in DB · Meilisearch · MinIO · Stalwart mail + webmail · self-hosted Jitsi video · Stripe Connect marketplace</sub>
 
-![files](https://img.shields.io/badge/TS_files-~1%2C720-7C3AED?style=flat-square&labelColor=0B0E14)
-![loc](https://img.shields.io/badge/LOC-~214k-22D3EE?style=flat-square&labelColor=0B0E14)
-![models](https://img.shields.io/badge/Prisma_models-263-7C3AED?style=flat-square&labelColor=0B0E14)
-![migrations](https://img.shields.io/badge/Tenant_migrations-141-22D3EE?style=flat-square&labelColor=0B0E14)
-![tests](https://img.shields.io/badge/Tests-2%2C800%2B-7C3AED?style=flat-square&labelColor=0B0E14)
+![files](https://img.shields.io/badge/TS_files-~2%2C480-7C3AED?style=flat-square&labelColor=0B0E14)
+![loc](https://img.shields.io/badge/LOC-~364k-22D3EE?style=flat-square&labelColor=0B0E14)
+![models](https://img.shields.io/badge/Prisma_models-302-7C3AED?style=flat-square&labelColor=0B0E14)
+![migrations](https://img.shields.io/badge/Tenant_migrations-182-22D3EE?style=flat-square&labelColor=0B0E14)
+![tests](https://img.shields.io/badge/Tests-5%2C200%2B-7C3AED?style=flat-square&labelColor=0B0E14)
 ![langs](https://img.shields.io/badge/Languages-4-22D3EE?style=flat-square&labelColor=0B0E14)
 ![svc](https://img.shields.io/badge/Docker_services-17-7C3AED?style=flat-square&labelColor=0B0E14)
 ![team](https://img.shields.io/badge/Team-~46_people-22D3EE?style=flat-square&labelColor=0B0E14)
 
 <br/>
 
-![cost](https://img.shields.io/badge/Est._build_cost-~1.5M%E2%82%AC-F59E0B?style=flat-square&labelColor=0B0E14)
-![effort](https://img.shields.io/badge/Est._effort-~118_person--months-F59E0B?style=flat-square&labelColor=0B0E14)
+![cost](https://img.shields.io/badge/Est._build_cost-~2.46M%E2%82%AC-F59E0B?style=flat-square&labelColor=0B0E14)
+![effort](https://img.shields.io/badge/Est._effort-~189_person--months-F59E0B?style=flat-square&labelColor=0B0E14)
 
-<sub><i>Payment, security and compliance code is 11 % of the lines — but 26 % of the cost.</i></sub>
+<sub><i>Payment, security and compliance code is 11 % of the lines — but 29 % of the cost.</i></sub>
 
 [![Visit Capibara](https://img.shields.io/badge/▶_capibara.fr-7C3AED?style=for-the-badge&labelColor=0B0E14)](https://capibara.fr)
 [![Forge Network](https://img.shields.io/badge/forgenet.fr-22D3EE?style=for-the-badge&labelColor=0B0E14)](https://forgenet.fr)
@@ -105,17 +105,17 @@ Workspace (projects + invoicing + installment plans) · **OPUS Cloud** (Pterodac
 
 <sub>Certification Program (27 tracks × 4 levels × 5 real-project briefs = 540 assessments) · OPUS Market (Stripe + DRM licenses) · News + RSS · 6-brand ecosystem with animated SVG mascots</sub>
 
-![models](https://img.shields.io/badge/Prisma_models-88-7C3AED?style=flat-square&labelColor=0B0E14)
-![loc](https://img.shields.io/badge/LOC-~93k-22D3EE?style=flat-square&labelColor=0B0E14)
-![routes](https://img.shields.io/badge/API_routes-54-7C3AED?style=flat-square&labelColor=0B0E14)
+![models](https://img.shields.io/badge/Prisma_models-94-7C3AED?style=flat-square&labelColor=0B0E14)
+![loc](https://img.shields.io/badge/LOC-~92k-22D3EE?style=flat-square&labelColor=0B0E14)
+![routes](https://img.shields.io/badge/API_routes-52-7C3AED?style=flat-square&labelColor=0B0E14)
 ![cert](https://img.shields.io/badge/Assessments-540-22D3EE?style=flat-square&labelColor=0B0E14)
 ![brands](https://img.shields.io/badge/Brands-6-7C3AED?style=flat-square&labelColor=0B0E14)
 ![team](https://img.shields.io/badge/Team-14_people-22D3EE?style=flat-square&labelColor=0B0E14)
 
 <br/>
 
-![cost](https://img.shields.io/badge/Est._build_cost-~650k%E2%82%AC-F59E0B?style=flat-square&labelColor=0B0E14)
-![effort](https://img.shields.io/badge/Est._effort-~50_person--months-F59E0B?style=flat-square&labelColor=0B0E14)
+![cost](https://img.shields.io/badge/Est._build_cost-~687k%E2%82%AC-F59E0B?style=flat-square&labelColor=0B0E14)
+![effort](https://img.shields.io/badge/Est._effort-~53_person--months-F59E0B?style=flat-square&labelColor=0B0E14)
 
 [![Live](https://img.shields.io/badge/▶_forgenet.fr-7C3AED?style=for-the-badge&labelColor=0B0E14)](https://forgenet.fr)
 [![Console](https://img.shields.io/badge/console.forgenet.fr-22D3EE?style=for-the-badge&labelColor=0B0E14)](https://console.forgenet.fr)
@@ -136,18 +136,18 @@ Workspace (projects + invoicing + installment plans) · **OPUS Cloud** (Pterodac
 ![SQLite](https://img.shields.io/badge/better--sqlite3-000?style=flat-square&labelColor=0B0E14&logo=sqlite&logoColor=003B57)
 ![Gemini](https://img.shields.io/badge/Genkit_·_Gemini_2.5-000?style=flat-square&labelColor=0B0E14&logo=googlegemini&logoColor=8E75FF)
 
-94 commands · 75+ modules · AI moderation · a **React Flow** visual editor (80+ blocks, live Discord-style preview) · 30 AI flows · Stripe premium
+93 commands · 75+ modules · AI moderation · a **React Flow** visual editor (80+ blocks, live Discord-style preview) · 30 AI flows · Stripe premium
 
 ![files](https://img.shields.io/badge/Files-~579-7C3AED?style=flat-square&labelColor=0B0E14)
 ![loc](https://img.shields.io/badge/LOC-~105k-22D3EE?style=flat-square&labelColor=0B0E14)
-![cmd](https://img.shields.io/badge/Commands-94-7C3AED?style=flat-square&labelColor=0B0E14)
+![cmd](https://img.shields.io/badge/Commands-93-7C3AED?style=flat-square&labelColor=0B0E14)
 ![flows](https://img.shields.io/badge/AI_flows-30-22D3EE?style=flat-square&labelColor=0B0E14)
 ![mods](https://img.shields.io/badge/Modules-75%2B-7C3AED?style=flat-square&labelColor=0B0E14)
 ![team](https://img.shields.io/badge/Team-13_people-22D3EE?style=flat-square&labelColor=0B0E14)
 
 <br/>
 
-![cost](https://img.shields.io/badge/Est._build_cost-~865k%E2%82%AC-F59E0B?style=flat-square&labelColor=0B0E14)
+![cost](https://img.shields.io/badge/Est._build_cost-~867k%E2%82%AC-F59E0B?style=flat-square&labelColor=0B0E14)
 ![effort](https://img.shields.io/badge/Est._effort-~67_person--months-F59E0B?style=flat-square&labelColor=0B0E14)
 
 [![Live](https://img.shields.io/badge/▶_marcusbot.fr-7C3AED?style=for-the-badge&labelColor=0B0E14)](https://marcusbot.fr)
@@ -155,7 +155,44 @@ Workspace (projects + invoicing + installment plans) · **OPUS Cloud** (Pterodac
 </td></tr>
 </table>
 
-<sub><b>About the build-cost estimates</b> — <i>these figures estimate what it would cost to rebuild each project from scratch with a senior team (10–11 years of web development on average) at the 2026 French senior market rate (~650 €/day). A person-month means one person working full time for one month — it is a unit of effort, not a headcount: ~118 person-months is what a team of ~46 delivers in about two and a half months. They are computed, not guessed: every file is classified into a zone — payment, security, compliance, integrations, business logic, UI, data model, infra, tests, docs — and each zone carries its own productivity rate, because a line of billing code (idempotency, webhooks, reconciliation, disputes) costs far more than a line of CRUD. Git history then adds the code that was written and later rewritten or thrown away — abandoned work cost time all the same — plus an overhead factor for what leaves no artifact: architecture decisions, deployments and ops. Estimates of value delivered, not amounts actually spent — the estimator itself lives in <a href="tools/estimate.py"><code>tools/estimate.py</code></a>, so the numbers can be re-run and checked.</i></sub>
+<!-- ============== ELIPSE RSAI ============== -->
+<table>
+<tr><td width="850" align="center">
+
+### <img src="https://api.iconify.design/lucide/heart-pulse.svg?color=%237C3AED&height=24" height="24" alt="" /> Elipse RSAI &nbsp;·&nbsp; <sub>PRIVATE · SHIPPED</sub>
+
+*Offline-first app for French childcare health referents — no server, no account, nothing leaves the device.*
+
+![Flutter](https://img.shields.io/badge/Flutter_3-000?style=flat-square&labelColor=0B0E14&logo=flutter&logoColor=02569B)
+![Dart](https://img.shields.io/badge/Dart_3-000?style=flat-square&labelColor=0B0E14&logo=dart&logoColor=0175C2)
+![SQLite](https://img.shields.io/badge/SQLite-000?style=flat-square&labelColor=0B0E14&logo=sqlite&logoColor=003B57)
+![Android](https://img.shields.io/badge/Android_8%2B-000?style=flat-square&labelColor=0B0E14&logo=android&logoColor=3DDC84)
+![Windows](https://img.shields.io/badge/Windows_10%2B-000?style=flat-square&labelColor=0B0E14&logo=windows&logoColor=0078D4)
+
+A referent covers 5 to 30 nurseries and owes each one a quota of hours set by decree, split by quarter — and has to prove it. Elipse logs an intervention in three taps, tracks the four legal counters per site, warns in February instead of December, and writes the reports (visit notes, referral letters, individual care plans, annual review) as PDFs, offline.
+
+<sub>Children's records are health data under GDPR art. 9 — hosting them would require HDS certification, so the architecture removes the host entirely. Local SQLite with hand-written SQL, sensitive fields encrypted with ChaCha20-Poly1305 · peer-to-peer sync over local wifi with an operation log and a hybrid logical clock · pairing by QR code, X25519 Diffie–Hellman and a six-digit code confirmed out loud · pure-Dart PDF engine · OPUS DRM licensing that degrades to read-only and never holds data hostage.</sub>
+
+![files](https://img.shields.io/badge/Dart_files-182-7C3AED?style=flat-square&labelColor=0B0E14)
+![loc](https://img.shields.io/badge/LOC-~74k-22D3EE?style=flat-square&labelColor=0B0E14)
+![screens](https://img.shields.io/badge/Screens-49-7C3AED?style=flat-square&labelColor=0B0E14)
+![tests](https://img.shields.io/badge/Test_files-58-22D3EE?style=flat-square&labelColor=0B0E14)
+![targets](https://img.shields.io/badge/Targets-Android_%26_Windows-7C3AED?style=flat-square&labelColor=0B0E14)
+![version](https://img.shields.io/badge/Version-1.6.2-22D3EE?style=flat-square&labelColor=0B0E14)
+
+<br/>
+
+![cost](https://img.shields.io/badge/Est._build_cost-~434k%E2%82%AC-F59E0B?style=flat-square&labelColor=0B0E14)
+![effort](https://img.shields.io/badge/Est._effort-~33_person--months-F59E0B?style=flat-square&labelColor=0B0E14)
+
+<sub><i>17k lines of tests for 56k lines of app — when the counters decide whether someone is compliant, they are not allowed to be wrong.</i></sub>
+
+[![Download](https://img.shields.io/badge/▶_Download-7C3AED?style=for-the-badge&labelColor=0B0E14)](https://forgenet.fr/telechargements/elipse)
+
+</td></tr>
+</table>
+
+<sub><b>About the build-cost estimates</b> — <i>these figures estimate what it would cost to rebuild each project from scratch with a senior team (10–11 years of web development on average) at the 2026 French senior market rate (~650 €/day). A person-month means one person working full time for one month — it is a unit of effort, not a headcount: ~189 person-months is what a team of ~46 delivers in about four months. They are computed, not guessed: every file is classified into a zone — payment, security, compliance, integrations, business logic, UI, data model, infra, tests, docs — and each zone carries its own productivity rate, because a line of billing code (idempotency, webhooks, reconciliation, disputes) costs far more than a line of CRUD. Git history then adds the code that was written and later rewritten or thrown away — abandoned work cost time all the same — plus an overhead factor for what leaves no artifact: architecture decisions, deployments and ops. Estimates of value delivered, not amounts actually spent — the estimator itself lives in <a href="tools/estimate.py"><code>tools/estimate.py</code></a>, so the numbers can be re-run and checked.</i></sub>
 
 </div>
 
@@ -270,7 +307,7 @@ One-key **Gaming ↔ Office** switch: **MouseMode** (Windows mouse profiles) and
 > ### <img src="https://api.iconify.design/lucide/lock.svg?color=%237C3AED&height=22" height="22" alt="" /> Public is the playground — mostly.
 > Most of my public repos are personal, experimental or built for fun (**OpenCoperLock** being my main
 > serious open-source project). My biggest client work and production systems — **Colibri / Capibara**
-> chief among them — stay private and unpublished. The real heavy lifting happens off GitHub.
+> and **Elipse RSAI** among them — stay private and unpublished. The real heavy lifting happens off GitHub.
 >
 > **Un nouveau Grand Projet arrive.**
 
@@ -312,6 +349,7 @@ planned compatibility with standard Linux apps. Polished UX, without giving up c
 ![TypeScript](https://img.shields.io/badge/TypeScript-000?style=flat-square&labelColor=0B0E14&logo=typescript&logoColor=3178C6)
 ![JavaScript](https://img.shields.io/badge/JavaScript-000?style=flat-square&labelColor=0B0E14&logo=javascript&logoColor=F7DF1E)
 ![Python](https://img.shields.io/badge/Python-000?style=flat-square&labelColor=0B0E14&logo=python&logoColor=3776AB)
+![Dart](https://img.shields.io/badge/Dart-000?style=flat-square&labelColor=0B0E14&logo=dart&logoColor=0175C2)
 ![Java](https://img.shields.io/badge/Java-000?style=flat-square&labelColor=0B0E14&logo=openjdk&logoColor=white)
 ![Scala](https://img.shields.io/badge/Scala-000?style=flat-square&labelColor=0B0E14&logo=scala&logoColor=DC322F)
 ![C++](https://img.shields.io/badge/C++-000?style=flat-square&labelColor=0B0E14&logo=cplusplus&logoColor=00599C)
@@ -323,6 +361,7 @@ planned compatibility with standard Linux apps. Polished UX, without giving up c
 ![React](https://img.shields.io/badge/React-000?style=flat-square&labelColor=0B0E14&logo=react&logoColor=61DAFB)
 ![Tailwind](https://img.shields.io/badge/Tailwind-000?style=flat-square&labelColor=0B0E14&logo=tailwindcss&logoColor=38BDF8)
 ![Vite](https://img.shields.io/badge/Vite-000?style=flat-square&labelColor=0B0E14&logo=vite&logoColor=646CFF)
+![Flutter](https://img.shields.io/badge/Flutter-000?style=flat-square&labelColor=0B0E14&logo=flutter&logoColor=02569B)
 
 **Backend & Data**
 
