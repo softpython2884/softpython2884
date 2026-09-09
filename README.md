@@ -437,6 +437,7 @@ statement of intent until there's something to install.
 ![Express](https://img.shields.io/badge/Express-000?style=flat-square&labelColor=0B0E14&logo=express)
 ![Prisma](https://img.shields.io/badge/Prisma-000?style=flat-square&labelColor=0B0E14&logo=prisma)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-000?style=flat-square&labelColor=0B0E14&logo=postgresql&logoColor=4169E1)
+![Redis](https://img.shields.io/badge/Redis-000?style=flat-square&labelColor=0B0E14&logo=redis&logoColor=DC382D)
 ![MongoDB](https://img.shields.io/badge/MongoDB-000?style=flat-square&labelColor=0B0E14&logo=mongodb&logoColor=47A248)
 
 **Systems & DevOps**
