@@ -7,10 +7,15 @@ de code de paiement (idempotence, webhooks, rapprochement, litiges) ne coûte pa
 le même prix qu'une ligne de CRUD. On classe donc chaque fichier dans une ZONE,
 et chaque zone a sa propre productivité (lignes retenues par heure de dev senior).
 
-Trois apports par rapport à une estimation au doigt mouillé :
+Quatre apports par rapport à une estimation au doigt mouillé :
   1. ZONES pondérées      -> où part réellement l'argent.
-  2. CHURN git            -> le code écrit puis jeté/réécrit a coûté aussi.
-  3. TYPES DE COMMITS     -> part de feature / debug / doc / refonte.
+  2. LIGNES qualifiées    -> une ligne vide ne coûte rien, un commentaire se
+                             facture au tarif de la documentation (voir 1ter).
+  3. CHURN git            -> le code écrit puis jeté/réécrit a coûté aussi.
+  4. TYPES DE COMMITS     -> part de feature / debug / doc / refonte.
+
+Un dépôt Godot (project.godot à la racine) est trié avec sa propre table de
+zones : voir GODOT_ZONES plus bas, et pourquoi.
 
 Usage :
     python3 estimate.py <chemin_du_depot> [--nom NOM] [--json fichier.json]
@@ -76,10 +81,28 @@ ZONES = [
     ("other", "Divers", 40, r".*"),
 ]
 
-EXCLUDE_DIRS = {
-    "node_modules", ".next", ".git", "dist", "build", "coverage", ".turbo",
-    "out", ".venv", "__pycache__", ".gradle", "target", "vendor", ".cache",
+# Dossiers qui ne contiennent jamais de code écrit à la main.
+ALWAYS_EXCLUDED = {
+    "node_modules", ".next", ".git", ".turbo", ".venv", "__pycache__",
+    ".gradle", ".cache", ".godot",
 }
+# Noms ambigus : « build » est la sortie d'un bundler dans un projet web, mais
+# c'est le mode construction dans le code source d'un jeu (src/build/). On les
+# exclut donc partout SAUF sous un dossier src/, où ce sont des sources.
+ARTIFACT_NAMES = {"dist", "build", "out", "coverage", "target", "vendor"}
+
+
+def excluded_dir(parents, name: str) -> bool:
+    """`parents` : segments du chemin relatif situés au-dessus du dossier `name`."""
+    if name in ALWAYS_EXCLUDED:
+        return True
+    return name in ARTIFACT_NAMES and "src" not in parents
+
+
+def path_excluded(path: str) -> bool:
+    """Le fichier (chemin relatif au dépôt, séparé par /) est-il sous un dossier exclu ?"""
+    segs = path.split("/")[:-1]
+    return any(excluded_dir(segs[:i], seg) for i, seg in enumerate(segs))
 
 # Fichiers dont le volume est généré/mécanique : exclus du churn git pour ne pas
 # fausser le calcul (un lockfile peut ajouter 15 000 lignes en un commit).
@@ -92,9 +115,55 @@ GENERATED = re.compile(
 
 COMPILED = [(k, lbl, loc_h, re.compile(pat)) for k, lbl, loc_h, pat in ZONES]
 
+# --------------------------------------------------------------------------
+# 1bis. Projets Godot — détectés par un project.godot à la racine du dépôt.
+#   Les zones à mots-clés ci-dessus décrivent un logiciel de gestion : argent,
+#   authentification, conformité, services externes. Un jeu n'en contient pas,
+#   et leurs mots-clés y tombent à faux : « verify » y rangeait 77 bancs de test
+#   en sécurité à 9 lignes/heure, « merchant » y rangeait le marchand du jeu en
+#   facturation. Pour un projet Godot, cette table remplace donc la précédente.
+#   Mêmes clés, donc mêmes productivités : seules les règles de tri changent.
+# --------------------------------------------------------------------------
 
-def classify(path: str) -> str:
+GODOT_ZONES = [
+    ("docs", r"\.mdx?$"),
+    # Sérialisé par l'éditeur bien plus qu'écrit à la main.
+    ("config", r"\.(godot|cfg|tscn|tres)$|(^|/)\.gitignore$"),
+    # Tout ce qui vérifie le jeu : tests, portes (tools/verify_*), captures et
+    # mesures qui les accompagnent, benchmarks, et les labos de scenes/dev/.
+    ("tests", r"(^|/)tests?/|(^|/)bench/|(^|/)scenes/dev/|"
+              r"(^|/)tools/(verify|shot|measure)_"),
+    ("infra", r"(^|/)tools/|(^|/)deploy/|\.(sh|ps1|bat)$"),
+    ("ui", r"(^|/)(ui|site)/|\.(html|css)$"),
+    # Le jeu lui-même : règles, monde, réseau, rendu, créatures.
+    ("server", r"\.(gd|gdshader|gdshaderinc|py)$"),
+    ("other", r".*"),
+]
+COMPILED_GODOT = [(k, re.compile(pat)) for k, pat in GODOT_ZONES]
+
+# Produit par l'éditeur ou par un outil, ou venu de tiers : jamais compté.
+GENERATED_GODOT = re.compile(
+    r"\.(uid|import|log)$|"          # un .uid par script, un .import par asset
+    r"(^|/)files/(pack|sounds)/"      # packs de ressources et sons de tiers
+)
+
+
+def detect_profile(repo: str) -> str:
+    return "godot" if os.path.isfile(os.path.join(repo, "project.godot")) else "standard"
+
+
+def is_generated(path: str, profile: str = "standard") -> bool:
     p = path.lower()
+    return bool(GENERATED.search(p)) or (profile == "godot" and bool(GENERATED_GODOT.search(p)))
+
+
+def classify(path: str, profile: str = "standard") -> str:
+    p = path.lower()
+    if profile == "godot":
+        for key, rx in COMPILED_GODOT:
+            if rx.search(p):
+                return key
+        return "other"
     for key, _lbl, _loc_h, rx in COMPILED:
         if rx.search(p):
             return key
@@ -109,18 +178,78 @@ def zone_meta(key: str):
 
 
 # --------------------------------------------------------------------------
+# 1ter. Toutes les lignes ne se valent pas
+#   Une ligne vide ne coûte rien. Un commentaire s'écrit au rythme d'une
+#   documentation, pas à celui du code qu'il explique : le facturer au tarif
+#   de la zone gonflait surtout les dépôts très commentés (un quart des lignes
+#   de Fallended sont des commentaires). Il est donc compté au tarif « docs »,
+#   ou à celui de sa zone quand elle va plus vite (un commentaire de fichier de
+#   configuration ne coûte pas plus cher que la configuration elle-même).
+#   Détection en début de ligne seulement : un commentaire placé après du code
+#   reste compté comme du code, ce qui garde l'erreur du côté haut.
+# --------------------------------------------------------------------------
+
+DOC_RATE = 55  # lignes/heure, même valeur que la zone « docs »
+
+C_LIKE_EXT = {".ts", ".tsx", ".js", ".jsx", ".mjs", ".cjs", ".dart", ".java", ".kt",
+              ".kts", ".scala", ".go", ".rs", ".c", ".h", ".cpp", ".hpp", ".cs",
+              ".swift", ".php", ".prisma", ".css", ".scss", ".gdshader", ".gdshaderinc"}
+HASH_EXT = {".gd", ".py", ".sh", ".bash", ".ps1", ".rb", ".toml", ".yml", ".yaml"}
+
+# extension -> (préfixes de commentaire de ligne, commentaires /* … */ possibles)
+COMMENT_SYNTAX = {ext: ((b"//",), True) for ext in C_LIKE_EXT}
+COMMENT_SYNTAX.update({ext: ((b"#",), False) for ext in HASH_EXT})
+COMMENT_SYNTAX[".sql"] = ((b"--",), True)
+
+
+def split_lines(raw: bytes, ext: str):
+    """(vides, commentaires, code) d'un fichier. Le total égale le nombre de
+    lignes compté partout ailleurs. Sans syntaxe connue, rien n'est commentaire."""
+    parts = raw.split(b"\n")
+    if parts and parts[-1] == b"":
+        parts.pop()
+    syntax = COMMENT_SYNTAX.get(ext)
+    blank = comments = code = 0
+    in_block = False
+    for part in parts:
+        s = part.strip()
+        if not s:
+            blank += 1
+        elif syntax is None:
+            code += 1
+        elif in_block:
+            comments += 1
+            in_block = b"*/" not in s
+        elif s.startswith(syntax[0]):
+            comments += 1
+        elif syntax[1] and s.startswith(b"/*"):
+            comments += 1
+            in_block = b"*/" not in s[2:]
+        else:
+            code += 1
+    return blank, comments, code
+
+
+def line_hours(code: int, comments: int, loc_h: float) -> float:
+    return code / loc_h + comments / max(loc_h, DOC_RATE)
+
+
+# --------------------------------------------------------------------------
 # 2. Scan de l'arbre courant (code RETENU)
 # --------------------------------------------------------------------------
 
-def scan_tree(repo: str):
-    stats = defaultdict(lambda: {"files": 0, "lines": 0})
+def scan_tree(repo: str, profile: str = "standard"):
+    stats = defaultdict(lambda: {"files": 0, "lines": 0, "blank": 0, "comments": 0,
+                                 "code": 0, "hours": 0.0})
     per_module = defaultdict(lambda: {"lines": 0, "hours": 0.0})
     for root, dirs, files in os.walk(repo):
-        dirs[:] = [d for d in dirs if d not in EXCLUDE_DIRS]
+        rel_root = os.path.relpath(root, repo)
+        parents = [] if rel_root == "." else rel_root.split(os.sep)
+        dirs[:] = [d for d in dirs if not excluded_dir(parents, d)]
         for fn in files:
             full = os.path.join(root, fn)
-            rel = os.path.relpath(full, repo)
-            if GENERATED.search(rel.lower()):
+            rel = os.path.relpath(full, repo).replace(os.sep, "/")
+            if is_generated(rel, profile):
                 continue
             try:
                 if os.path.getsize(full) > 4_000_000:
@@ -129,17 +258,24 @@ def scan_tree(repo: str):
                     raw = fh.read()
                 if b"\0" in raw[:2048]:      # binaire
                     continue
-                lines = raw.count(b"\n") + (1 if raw and not raw.endswith(b"\n") else 0)
             except (OSError, ValueError):
                 continue
+            blank, comments, code = split_lines(raw, os.path.splitext(fn)[1].lower())
+            lines = blank + comments + code
             if lines == 0:
                 continue
-            z = classify(rel)
-            stats[z]["files"] += 1
-            stats[z]["lines"] += lines
+            z = classify(rel, profile)
             _lbl, loc_h = zone_meta(z)
+            hours = line_hours(code, comments, loc_h)
+            s = stats[z]
+            s["files"] += 1
+            s["lines"] += lines
+            s["blank"] += blank
+            s["comments"] += comments
+            s["code"] += code
+            s["hours"] += hours
             per_module[module_of(rel)]["lines"] += lines
-            per_module[module_of(rel)]["hours"] += lines / loc_h
+            per_module[module_of(rel)]["hours"] += hours
     return stats, per_module
 
 
@@ -160,7 +296,7 @@ def module_of(rel: str) -> str:
 # 3. Churn git — le code écrit puis jeté a coûté aussi
 # --------------------------------------------------------------------------
 
-def git_churn(repo: str):
+def git_churn(repo: str, profile: str = "standard"):
     try:
         out = subprocess.run(
             ["git", "-C", repo, "log", "--numstat", "--format=__C__%H", "--no-merges"],
@@ -180,9 +316,7 @@ def git_churn(repo: str):
         a, d, path = parts
         if a == "-" or d == "-":            # binaire
             continue
-        if GENERATED.search(path.lower()):
-            continue
-        if any(seg in EXCLUDE_DIRS for seg in path.split("/")):
+        if is_generated(path, profile) or path_excluded(path):
             continue
         ins += int(a)
         dele += int(d)
@@ -243,7 +377,7 @@ def git_kinds(repo: str):
 # 4bis. Évolution mois par mois : où est passé l'effort dans le temps
 # --------------------------------------------------------------------------
 
-def git_timeline(repo: str):
+def git_timeline(repo: str, profile: str = "standard"):
     """Lignes ajoutées par mois, regroupées en grandes familles de travail."""
     try:
         out = subprocess.run(
@@ -270,11 +404,9 @@ def git_timeline(repo: str):
         if len(parts) != 3 or month is None:
             continue
         a, _d, path = parts
-        if a == "-" or GENERATED.search(path.lower()):
+        if a == "-" or is_generated(path, profile) or path_excluded(path):
             continue
-        if any(seg in EXCLUDE_DIRS for seg in path.split("/")):
-            continue
-        months[month][FAMILY.get(classify(path), "code")] += int(a)
+        months[month][FAMILY.get(classify(path, profile), "code")] += int(a)
     return dict(months)
 
 
@@ -320,27 +452,33 @@ def main() -> int:
     repo = os.path.abspath(args.repo)
     name = args.nom or os.path.basename(repo)
 
-    stats, per_module = scan_tree(repo)
-    churn = git_churn(repo)
+    profile = detect_profile(repo)
+    stats, per_module = scan_tree(repo, profile)
+    churn = git_churn(repo, profile)
     kinds = git_kinds(repo)
-    timeline = git_timeline(repo) if args.timeline else None
+    timeline = git_timeline(repo, profile) if args.timeline else None
 
     rows = []
     base_hours = 0.0
-    total_lines = 0
+    total_lines = total_code = total_comments = total_blank = 0
     for key, lbl, loc_h, _rx in ZONES:
         if key not in stats:
             continue
-        lines = stats[key]["lines"]
-        files = stats[key]["files"]
-        hours = lines / loc_h
-        base_hours += hours
-        total_lines += lines
-        rows.append({"zone": key, "libelle": lbl, "fichiers": files, "lignes": lines,
-                     "loc_h": loc_h, "heures": round(hours)})
+        s = stats[key]
+        base_hours += s["hours"]
+        total_lines += s["lines"]
+        total_code += s["code"]
+        total_comments += s["comments"]
+        total_blank += s["blank"]
+        rows.append({"zone": key, "libelle": lbl, "fichiers": s["files"],
+                     "lignes": s["lines"], "code": s["code"],
+                     "commentaires": s["comments"], "vides": s["blank"],
+                     "loc_h": loc_h, "heures": round(s["hours"])})
     rows.sort(key=lambda r: -r["heures"])
 
-    # --- rework : lignes insérées au fil de l'histoire mais absentes de l'arbre
+    # --- rework : lignes insérées au fil de l'histoire mais absentes de l'arbre.
+    #     Elles comptent vides et commentaires : on les convertit donc avec le
+    #     rythme moyen du dépôt, lignes de toute nature comprises.
     rework_hours = 0.0
     churn_ratio = None
     if churn and total_lines:
@@ -355,18 +493,28 @@ def main() -> int:
     months = days / 20.0
     cost = days * args.tjm
 
-    w = 78
+    def nb(n, width=0):
+        """Entier avec une espace pour séparateur de milliers."""
+        return f"{n:,}".replace(",", " ").rjust(width)
+
+    w = 96
     print("=" * w)
-    print(f"  {name}  —  estimation d'effort et de coût")
+    print(f"  {name}  —  estimation d'effort et de coût  (table : {profile})")
     print("=" * w)
-    print(f"{'Zone':<38}{'Fichiers':>9}{'Lignes':>10}{'L/h':>6}{'Heures':>9}")
+    print(f"{'Zone':<38}{'Fichiers':>9}{'Lignes':>10}{'dont code':>11}"
+          f"{'comment.':>10}{'L/h':>6}{'Heures':>9}")
     print("-" * w)
     for r in rows:
-        print(f"{r['libelle']:<38}{r['fichiers']:>9}{r['lignes']:>10,}"
-              f"{r['loc_h']:>6}{r['heures']:>9,}".replace(",", " "))
+        print(f"{r['libelle']:<38}{r['fichiers']:>9}{nb(r['lignes'], 10)}{nb(r['code'], 11)}"
+              f"{nb(r['commentaires'], 10)}{r['loc_h']:>6}{nb(r['heures'], 9)}")
     print("-" * w)
     print(f"{'CODE RETENU':<38}{sum(r['fichiers'] for r in rows):>9}"
-          f"{total_lines:>10,}{'':>6}{round(base_hours):>9,}".replace(",", " "))
+          f"{nb(total_lines, 10)}{nb(total_code, 11)}{nb(total_comments, 10)}"
+          f"{'':>6}{nb(round(base_hours), 9)}")
+    if total_lines:
+        print(f"  Lignes vides : {nb(total_blank)} ({100 * total_blank / total_lines:.1f} %), "
+              f"non facturées. Commentaires : {100 * total_comments / total_lines:.1f} %, "
+              f"au tarif documentation ({DOC_RATE} L/h).")
 
     if churn:
         print()
@@ -409,7 +557,9 @@ def main() -> int:
 
     if args.json:
         payload = {
-            "nom": name, "zones": rows, "lignes_retenues": total_lines,
+            "nom": name, "profil": profile, "zones": rows, "lignes_retenues": total_lines,
+            "lignes_code": total_code, "lignes_commentaires": total_comments,
+            "lignes_vides": total_blank,
             "heures_code": round(base_hours), "heures_reprise": round(rework_hours),
             "overhead": args.overhead, "heures_total": round(total_hours),
             "jours": round(days), "mois_homme": round(months, 1),

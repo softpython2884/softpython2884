@@ -3,7 +3,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0B0E14,100:1B2A4A&height=210&section=header&text=NightFury&fontColor=ffffff&fontSize=66&fontAlignY=34&desc=Full-Stack%20%C2%B7%20SysAdmin%20%C2%B7%20OS%20Builder&descSize=18&descAlignY=58&animation=fadeIn" width="100%" alt="NightFury" />
 
 <a href="https://forgenet.fr">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=900&color=22D3EE&center=true&vCenter=true&width=760&lines=Founder+%40+Forge+Network+%E2%80%94+forgenet.fr;Multi-tenant+SaaS+%C2%B7+one+database+schema+per+customer;~20+apps+in+production+%C2%B7+302+models+%C2%B7+fr%2Fen%2Fes%2Fde;TypeScript+%C2%B7+Flutter+%C2%B7+PostgreSQL+%C2%B7+Docker+%C2%B7+Debian" alt="What I do" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=900&color=22D3EE&center=true&vCenter=true&width=800&lines=Founder+%40+Forge+Network+%E2%80%94+forgenet.fr;Multi-tenant+SaaS+%C2%B7+one+database+schema+per+customer;~20+apps+in+production+%C2%B7+308+models+%C2%B7+fr%2Fen%2Fes%2Fde;TypeScript+%C2%B7+Flutter+%C2%B7+Godot+%C2%B7+PostgreSQL+%C2%B7+Docker+%C2%B7+Debian" alt="What I do" />
 </a>
 
 <br/>
@@ -31,8 +31,8 @@ level.
 const nightFury = {
   role:    ["Full-Stack", "SysAdmin", "Data Eng", "OS Builder"],
   founder: "Forge Network · forgenet.fr",
-  stack:   ["TypeScript", "Next.js", "React", "Node", "Dart", "PostgreSQL", "Docker", "Linux"],
-  now:     ["Capibara (SaaS suite)", "a custom Linux distro", "a new Grand Projet"],
+  stack:   ["TypeScript", "Next.js", "React", "Node", "Dart", "Godot", "PostgreSQL", "Docker", "Linux"],
+  now:     ["Capibara (SaaS suite)", "Fallended (voxel arena)", "a custom Linux distro", "a new Grand Projet"],
   learning:"Scala & high-performance JVM systems",
 };
 ```
@@ -81,8 +81,8 @@ Redis/BullMQ documented as the upgrade for horizontal scale instead of required 
 
 <br/>
 
-![cost](https://img.shields.io/badge/Est._rebuild_cost-~155k%E2%82%AC-F59E0B?style=flat-square&labelColor=0B0E14)
-![effort](https://img.shields.io/badge/Est._effort-~12_person--months-F59E0B?style=flat-square&labelColor=0B0E14)
+![cost](https://img.shields.io/badge/Est._rebuild_cost-~130k%E2%82%AC-F59E0B?style=flat-square&labelColor=0B0E14)
+![effort](https://img.shields.io/badge/Est._effort-~10_person--months-F59E0B?style=flat-square&labelColor=0B0E14)
 
 [![Repo](https://img.shields.io/badge/▶_Read_the_source-181717?style=for-the-badge&labelColor=0B0E14&logo=github)](https://github.com/softpython2884/OpenCoperLock)
 [![Live](https://img.shields.io/badge/copper.forgenet.fr-22D3EE?style=for-the-badge&labelColor=0B0E14)](https://copper.forgenet.fr)
@@ -96,8 +96,9 @@ Redis/BullMQ documented as the upgrade for horizontal scale instead of required 
 
 ## <img src="https://api.iconify.design/lucide/rocket.svg?color=%237C3AED&height=26" height="26" alt="" />&nbsp; Flagship Work
 
-> Four systems in production. All four are private — client work and products that are sold — so the
-> links go to the live product or the download, and the numbers come from the repositories.
+> Four systems in production and one game. All five are private — client work, products that are
+> sold, and a game whose source isn't ready to publish — so the links go to the live product or the
+> download, and the numbers come from the repositories.
 
 <div align="center">
 
@@ -125,27 +126,27 @@ from its own domain.
 The isolation is structural rather than a filter: **every customer gets its own copy of the database
 schema**, so one company's data can't turn up in another's query even if a `WHERE` clause is
 forgotten. What it costs is honest to state — a schema change has to be replayed on every customer,
-which is where the 182 tenant migrations come from, and why a deployment stops instead of running
+which is where the 184 tenant migrations come from, and why a deployment stops instead of running
 new code against a database that hasn't caught up.
 
 CRM · French invoicing (Factur-X) · Accounting with FEC export · Shop · Inventory · Purchasing · Planning · Support · Projects · HR · Training · Blog · Newsletter · Chat · Wiki & storage
 
 <sub>Permissions are re-read from the database on every call rather than trusted from the session · Meilisearch, MinIO, a mail server with webmail, self-hosted video and a Stripe Connect marketplace each run as their own container · Not multi-region and not one database per client: a single Postgres holds them all, and scaling past one machine is a known open problem rather than a solved one.</sub>
 
-![files](https://img.shields.io/badge/TS_files-~2%2C480-7C3AED?style=flat-square&labelColor=0B0E14)
-![loc](https://img.shields.io/badge/LOC-~364k-22D3EE?style=flat-square&labelColor=0B0E14)
-![models](https://img.shields.io/badge/Data_models-302-7C3AED?style=flat-square&labelColor=0B0E14)
-![migrations](https://img.shields.io/badge/Tenant_migrations-182-22D3EE?style=flat-square&labelColor=0B0E14)
-![tests](https://img.shields.io/badge/Tests-5%2C200%2B-7C3AED?style=flat-square&labelColor=0B0E14)
+![files](https://img.shields.io/badge/TS_files-~3%2C020-7C3AED?style=flat-square&labelColor=0B0E14)
+![loc](https://img.shields.io/badge/LOC-~492k-22D3EE?style=flat-square&labelColor=0B0E14)
+![models](https://img.shields.io/badge/Data_models-308-7C3AED?style=flat-square&labelColor=0B0E14)
+![migrations](https://img.shields.io/badge/Tenant_migrations-184-22D3EE?style=flat-square&labelColor=0B0E14)
+![tests](https://img.shields.io/badge/Tests-9%2C700%2B-7C3AED?style=flat-square&labelColor=0B0E14)
 ![langs](https://img.shields.io/badge/Locales-fr_en_es_de-22D3EE?style=flat-square&labelColor=0B0E14)
-![svc](https://img.shields.io/badge/Docker_services-17-7C3AED?style=flat-square&labelColor=0B0E14)
+![svc](https://img.shields.io/badge/Docker_services-21-7C3AED?style=flat-square&labelColor=0B0E14)
 
 <br/>
 
-![cost](https://img.shields.io/badge/Est._rebuild_cost-~2.46M%E2%82%AC-F59E0B?style=flat-square&labelColor=0B0E14)
-![effort](https://img.shields.io/badge/Est._effort-~189_person--months-F59E0B?style=flat-square&labelColor=0B0E14)
+![cost](https://img.shields.io/badge/Est._rebuild_cost-~2.59M%E2%82%AC-F59E0B?style=flat-square&labelColor=0B0E14)
+![effort](https://img.shields.io/badge/Est._effort-~199_person--months-F59E0B?style=flat-square&labelColor=0B0E14)
 
-<sub><i>Payment, security and compliance code is 11 % of the lines and 29 % of that estimate.</i></sub>
+<sub><i>Payment, security and compliance code is 11 % of the lines and 27 % of that estimate.</i></sub>
 
 [![Visit Capibara](https://img.shields.io/badge/▶_capibara.fr-7C3AED?style=for-the-badge&labelColor=0B0E14)](https://capibara.fr)
 [![Forge Network](https://img.shields.io/badge/forgenet.fr-22D3EE?style=for-the-badge&labelColor=0B0E14)](https://forgenet.fr)
@@ -189,8 +190,8 @@ valid one. Elipse RSAI runs on it.
 
 <br/>
 
-![cost](https://img.shields.io/badge/Est._rebuild_cost-~687k%E2%82%AC-F59E0B?style=flat-square&labelColor=0B0E14)
-![effort](https://img.shields.io/badge/Est._effort-~53_person--months-F59E0B?style=flat-square&labelColor=0B0E14)
+![cost](https://img.shields.io/badge/Est._rebuild_cost-~605k%E2%82%AC-F59E0B?style=flat-square&labelColor=0B0E14)
+![effort](https://img.shields.io/badge/Est._effort-~47_person--months-F59E0B?style=flat-square&labelColor=0B0E14)
 
 [![Live](https://img.shields.io/badge/▶_forgenet.fr-7C3AED?style=for-the-badge&labelColor=0B0E14)](https://forgenet.fr)
 [![Console](https://img.shields.io/badge/console.forgenet.fr-22D3EE?style=for-the-badge&labelColor=0B0E14)](https://console.forgenet.fr)
@@ -231,8 +232,8 @@ by the user when the message fails to send.
 
 <br/>
 
-![cost](https://img.shields.io/badge/Est._rebuild_cost-~867k%E2%82%AC-F59E0B?style=flat-square&labelColor=0B0E14)
-![effort](https://img.shields.io/badge/Est._effort-~67_person--months-F59E0B?style=flat-square&labelColor=0B0E14)
+![cost](https://img.shields.io/badge/Est._rebuild_cost-~722k%E2%82%AC-F59E0B?style=flat-square&labelColor=0B0E14)
+![effort](https://img.shields.io/badge/Est._effort-~56_person--months-F59E0B?style=flat-square&labelColor=0B0E14)
 
 <sub><i>Least flattering number on this page, and it stays: 2.07× more lines were written than survive. The visual editor was rebuilt more than once.</i></sub>
 
@@ -280,12 +281,61 @@ it often does.
 
 <br/>
 
-![cost](https://img.shields.io/badge/Est._rebuild_cost-~434k%E2%82%AC-F59E0B?style=flat-square&labelColor=0B0E14)
-![effort](https://img.shields.io/badge/Est._effort-~33_person--months-F59E0B?style=flat-square&labelColor=0B0E14)
+![cost](https://img.shields.io/badge/Est._rebuild_cost-~345k%E2%82%AC-F59E0B?style=flat-square&labelColor=0B0E14)
+![effort](https://img.shields.io/badge/Est._effort-~27_person--months-F59E0B?style=flat-square&labelColor=0B0E14)
 
 <sub><i>17k lines of tests against 56k lines of app. The rules that decide whether someone is compliant are kept apart from the interface so they can be tested on their own.</i></sub>
 
 [![Download](https://img.shields.io/badge/▶_Download-7C3AED?style=for-the-badge&labelColor=0B0E14)](https://forgenet.fr/telechargements/elipse)
+
+</td></tr>
+</table>
+
+<!-- ============== FALLENDED ============== -->
+<table>
+<tr><td width="850" align="center">
+
+### <img src="https://api.iconify.design/lucide/castle.svg?color=%237C3AED&height=24" height="24" alt="" /> Fallended &nbsp;·&nbsp; <sub>private · playable build</sub>
+
+*A voxel arena for four kingdoms: five minutes to dig in, then an hour to break the other three hearts before they break yours.*
+
+![Godot](https://img.shields.io/badge/Godot_4.7-000?style=flat-square&labelColor=0B0E14&logo=godotengine&logoColor=478CBF)
+![GDScript](https://img.shields.io/badge/GDScript-000?style=flat-square&labelColor=0B0E14&logo=godotengine&logoColor=478CBF)
+![ENet](https://img.shields.io/badge/ENet_multiplayer-000?style=flat-square&labelColor=0B0E14)
+![Windows](https://img.shields.io/badge/Windows-000?style=flat-square&labelColor=0B0E14)
+
+Each kingdom has a heart crystal, a base, and a shaft down into caves full of ore and creatures. For
+the first five minutes no player can touch you: you mine, you fortify, you go down. Then it all
+opens — walls come down, charges go against hearts, a boss wakes at minute 35 and sides with nobody,
+a storm takes the light for the last ten minutes, and sudden death settles what's left. The map is
+generated for every match; one player hosts and the others type in the address.
+
+The choice everything else follows from: **solo is the server**. Godot runs a single-player game as
+a server without a line of networking code, so there was never an "add multiplayer later" step —
+every rule was written once, on the server, from the start. The price is where the bugs hide. In
+solo the server *is* the player, so anything decided on the wrong side of the network passes every
+test: a client took fall damage on a hay bale the host landed on safely, and the death screen came
+up twice, but only on the machine that wasn't hosting. The checks that count now load the real
+game, and one of them starts a second copy and connects the two.
+
+<sub>70-minute matches, 2 to 16 players · each machine owns its player's position and the server clamps what it claims · other players are drawn about a tenth of a second behind, a delay sized from the connection's own jitter, so they don't stutter on a poor line · a custom skin crosses the network once, keyed on its content, so nobody downloads a picture they already have · Minecraft resource packs drop in · controller support</sub>
+
+![files](https://img.shields.io/badge/GDScript_files-379-7C3AED?style=flat-square&labelColor=0B0E14)
+![loc](https://img.shields.io/badge/LOC-~307k-22D3EE?style=flat-square&labelColor=0B0E14)
+![gates](https://img.shields.io/badge/Test_gates-77-7C3AED?style=flat-square&labelColor=0B0E14)
+![blocks](https://img.shields.io/badge/Block_types-102-22D3EE?style=flat-square&labelColor=0B0E14)
+![species](https://img.shields.io/badge/Creature_species-11-7C3AED?style=flat-square&labelColor=0B0E14)
+![decisions](https://img.shields.io/badge/Written_decisions-92-22D3EE?style=flat-square&labelColor=0B0E14)
+
+<br/>
+
+![cost](https://img.shields.io/badge/Est._rebuild_cost-~982k%E2%82%AC-F59E0B?style=flat-square&labelColor=0B0E14)
+![effort](https://img.shields.io/badge/Est._effort-~76_person--months-F59E0B?style=flat-square&labelColor=0B0E14)
+
+<sub><i>More code checks the game than is the game: 161k lines of tests, labs and benchmarks against 141k lines of game.</i></sub>
+
+[![Play](https://img.shields.io/badge/▶_fallended.forgenet.fr-7C3AED?style=for-the-badge&labelColor=0B0E14)](https://fallended.forgenet.fr)
+[![Download](https://img.shields.io/badge/Download_%C2%B7_Windows-22D3EE?style=for-the-badge&labelColor=0B0E14)](https://fallended.forgenet.fr/#dl)
 
 </td></tr>
 </table>
@@ -296,19 +346,20 @@ it often does.
 
 | Project | Lines counted | Effort | Rebuild cost | Written / kept |
 |:---|---:|---:|---:|---:|
-| **Capibara** | 430 122 | 189 person-months | ~2.46 M€ | 1.14× |
-| **Marcus** | 112 364 | 67 person-months | ~867 k€ | 2.07× |
-| **OPUS** | 103 925 | 53 person-months | ~687 k€ | 1.39× |
-| **Elipse RSAI** | 83 471 | 33 person-months | ~434 k€ | 1.05× |
-| **OpenCoperLock** | 28 147 | 12 person-months | ~155 k€ | 1.12× |
+| **Capibara** | 573 598 | 199 person-months | ~2.59 M€ | 1.17× |
+| **Fallended** | 357 433 | 76 person-months | ~982 k€ | n/a |
+| **Marcus** | 112 364 | 56 person-months | ~722 k€ | 2.07× |
+| **OPUS** | 103 925 | 47 person-months | ~605 k€ | 1.39× |
+| **Elipse RSAI** | 83 471 | 27 person-months | ~345 k€ | 1.05× |
+| **OpenCoperLock** | 28 147 | 10 person-months | ~130 k€ | 1.12× |
 
 <sub><b>Not money anyone spent.</b> <i>These estimate what it would cost to <b>rebuild</b> each project from scratch with a senior team at the 2026 French senior rate (~650 €/day) — and they are computed rather than guessed. The script is <a href="tools/estimate.py"><code>tools/estimate.py</code></a> and it runs on any of these repositories.</i></sub>
 
-<sub><b>How.</b> <i>Every file is sorted into a zone — payment, security, compliance, integrations, business logic, interface, data model, infrastructure, tests, docs — and each zone carries its own lines-per-hour rate, because billing code with idempotency, webhooks and reconciliation does not cost what CRUD costs. Git history then adds what was written and later rewritten or thrown away, since abandoned work took the same time, and an overhead factor covers what leaves no file behind: architecture, deployment, operations.</i></sub>
+<sub><b>How.</b> <i>Every file is sorted into a zone — payment, security, compliance, integrations, business logic, interface, data model, infrastructure, tests, docs — and each zone carries its own lines-per-hour rate, because billing code with idempotency, webhooks and reconciliation does not cost what CRUD costs. Blank lines cost nothing, and a comment is billed at the documentation rate rather than at the rate of the code it explains. A Godot project is sorted with its own table: a game has no billing or compliance code, and those keywords would only misfile it — "verify" would put 77 test gates under security. Git history then adds what was written and later rewritten or thrown away, since abandoned work took the same time, and an overhead factor covers what leaves no file behind: architecture, deployment, operations.</i></sub>
 
-<sub><b>A person-month</b> <i>is one person working full time for one month. It is a unit of effort, not a headcount — 189 person-months is roughly what a team of ~46 delivers in four months.</i></sub>
+<sub><b>A person-month</b> <i>is one person working full time for one month. It is a unit of effort, not a headcount — 199 person-months is roughly what a team of ~50 delivers in four months.</i></sub>
 
-<sub><b>Two caveats.</b> <i>The productivity assumption sits at the optimistic end of the published 10–20 lines/hour range, so if these figures are wrong they are low rather than high. And on Capibara, payment, security and compliance code is 11 % of the lines but 29 % of the estimate — which is exactly why a flat average would have been worthless here.</i></sub>
+<sub><b>Three caveats.</b> <i>The productivity assumption sits at the optimistic end of the published 10–20 lines/hour range, so if these figures are wrong they are low rather than high. On Capibara, payment, security and compliance code is 11 % of the lines but 27 % of the estimate — which is exactly why a flat average would have been worthless here. And Fallended's git history starts with a backup of the whole project on 17 September 2026, so its written/kept ratio can't be measured and its estimate carries almost no rework — one more reason it errs low.</i></sub>
 
 </div>
 
@@ -417,18 +468,20 @@ statement of intent until there's something to install.
 ![JavaScript](https://img.shields.io/badge/JavaScript-000?style=flat-square&labelColor=0B0E14&logo=javascript&logoColor=F7DF1E)
 ![Python](https://img.shields.io/badge/Python-000?style=flat-square&labelColor=0B0E14&logo=python&logoColor=3776AB)
 ![Dart](https://img.shields.io/badge/Dart-000?style=flat-square&labelColor=0B0E14&logo=dart&logoColor=0175C2)
+![GDScript](https://img.shields.io/badge/GDScript-000?style=flat-square&labelColor=0B0E14&logo=godotengine&logoColor=478CBF)
 ![Java](https://img.shields.io/badge/Java-000?style=flat-square&labelColor=0B0E14&logo=openjdk&logoColor=white)
 ![Scala](https://img.shields.io/badge/Scala-000?style=flat-square&labelColor=0B0E14&logo=scala&logoColor=DC322F)
 ![C++](https://img.shields.io/badge/C++-000?style=flat-square&labelColor=0B0E14&logo=cplusplus&logoColor=00599C)
 ![Bash](https://img.shields.io/badge/Bash-000?style=flat-square&labelColor=0B0E14&logo=gnubash&logoColor=4EAA25)
 
-**Frontend**
+**Frontend & clients**
 
 ![Next.js](https://img.shields.io/badge/Next.js-000?style=flat-square&labelColor=0B0E14&logo=nextdotjs)
 ![React](https://img.shields.io/badge/React-000?style=flat-square&labelColor=0B0E14&logo=react&logoColor=61DAFB)
 ![Tailwind](https://img.shields.io/badge/Tailwind-000?style=flat-square&labelColor=0B0E14&logo=tailwindcss&logoColor=38BDF8)
 ![Vite](https://img.shields.io/badge/Vite-000?style=flat-square&labelColor=0B0E14&logo=vite&logoColor=646CFF)
 ![Flutter](https://img.shields.io/badge/Flutter-000?style=flat-square&labelColor=0B0E14&logo=flutter&logoColor=02569B)
+![Godot](https://img.shields.io/badge/Godot-000?style=flat-square&labelColor=0B0E14&logo=godotengine&logoColor=478CBF)
 
 **Backend & Data**
 
@@ -457,16 +510,17 @@ statement of intent until there's something to install.
 
 <div align="center">
 
-![TypeScript](https://img.shields.io/badge/TypeScript-82.8_%25-3178C6?style=flat-square&labelColor=0B0E14)
-![Dart](https://img.shields.io/badge/Dart-10.3_%25-0175C2?style=flat-square&labelColor=0B0E14)
-![SQL](https://img.shields.io/badge/SQL-1.4_%25-4169E1?style=flat-square&labelColor=0B0E14)
-![Prisma](https://img.shields.io/badge/Prisma-1.3_%25-2D3748?style=flat-square&labelColor=0B0E14)
-![Java](https://img.shields.io/badge/Java-1.3_%25-EA2D2E?style=flat-square&labelColor=0B0E14)
-![HTML / CSS](https://img.shields.io/badge/HTML_%2F_CSS-1.2_%25-E34F26?style=flat-square&labelColor=0B0E14)
-![Shell](https://img.shields.io/badge/Shell-0.8_%25-4EAA25?style=flat-square&labelColor=0B0E14)
+![TypeScript](https://img.shields.io/badge/TypeScript-62.2_%25-3178C6?style=flat-square&labelColor=0B0E14)
+![GDScript](https://img.shields.io/badge/GDScript-26.5_%25-478CBF?style=flat-square&labelColor=0B0E14)
+![Dart](https://img.shields.io/badge/Dart-6.3_%25-0175C2?style=flat-square&labelColor=0B0E14)
+![Prisma](https://img.shields.io/badge/Prisma-0.9_%25-2D3748?style=flat-square&labelColor=0B0E14)
+![SQL](https://img.shields.io/badge/SQL-0.9_%25-4169E1?style=flat-square&labelColor=0B0E14)
+![HTML / CSS](https://img.shields.io/badge/HTML_%2F_CSS-0.8_%25-E34F26?style=flat-square&labelColor=0B0E14)
+![Java](https://img.shields.io/badge/Java-0.8_%25-EA2D2E?style=flat-square&labelColor=0B0E14)
+![Shell](https://img.shields.io/badge/Shell-0.6_%25-4EAA25?style=flat-square&labelColor=0B0E14)
 ![Python](https://img.shields.io/badge/Python-0.2_%25-3776AB?style=flat-square&labelColor=0B0E14)
 
-<sub><i>Counted across the eight repositories behind this page — <b>717 526 lines</b>, private ones included. Re-derive it with <a href="tools/languages.py"><code>tools/languages.py</code></a>. A GitHub language graph would only see the public repos, which is the smaller half.</i></sub>
+<sub><i>Counted across the nine repositories behind this page — <b>1 161 137 lines</b>, private ones included. Re-derive it with <a href="tools/languages.py"><code>tools/languages.py</code></a>. A GitHub language graph would only see the public repos, which is the smaller half.</i></sub>
 
 </div>
 
