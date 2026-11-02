@@ -3,7 +3,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0B0E14,100:1B2A4A&height=210&section=header&text=NightFury&fontColor=ffffff&fontSize=66&fontAlignY=34&desc=Full-Stack%20%C2%B7%20SysAdmin%20%C2%B7%20OS%20Builder&descSize=18&descAlignY=58&animation=fadeIn" width="100%" alt="NightFury" />
 
 <a href="https://forgenet.fr">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=900&color=22D3EE&center=true&vCenter=true&width=800&lines=Founder+%40+Forge+Network+%E2%80%94+forgenet.fr;Multi-tenant+SaaS+%C2%B7+one+database+schema+per+customer;~20+apps+in+production+%C2%B7+311+models+%C2%B7+fr%2Fen%2Fes%2Fde;TypeScript+%C2%B7+Flutter+%C2%B7+Godot+%C2%B7+PostgreSQL+%C2%B7+Docker+%C2%B7+Debian" alt="What I do" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=900&color=22D3EE&center=true&vCenter=true&width=800&lines=Founder+%40+Forge+Network+%E2%80%94+forgenet.fr;Multi-tenant+SaaS+%C2%B7+one+database+schema+per+customer;~20+apps+in+production+%C2%B7+345+models+%C2%B7+fr%2Fen%2Fes%2Fde;TypeScript+%C2%B7+Flutter+%C2%B7+Godot+%C2%B7+PostgreSQL+%C2%B7+Docker+%C2%B7+Debian" alt="What I do" />
 </a>
 
 <br/>
@@ -126,30 +126,77 @@ from its own domain.
 The isolation is structural rather than a filter: **every customer gets its own copy of the database
 schema**, so one company's data can't turn up in another's query even if a `WHERE` clause is
 forgotten. What it costs is honest to state — a schema change has to be replayed on every customer,
-which is where the 194 tenant migrations come from, and why a deployment stops instead of running
+which is where the 249 tenant migrations come from, and why a deployment stops instead of running
 new code against a database that hasn't caught up.
 
 CRM · French invoicing (Factur-X) · Accounting with FEC export · Shop · Inventory · Purchasing · Planning · Support · Projects · HR · Training · Blog · Newsletter · Chat · Wiki & storage
 
 <sub>Permissions are re-read from the database on every call rather than trusted from the session · Meilisearch, MinIO, a mail server with webmail, self-hosted video and a Stripe Connect marketplace each run as their own container · Not multi-region and not one database per client: a single Postgres holds them all, and scaling past one machine is a known open problem rather than a solved one.</sub>
 
-![files](https://img.shields.io/badge/TS_files-~3%2C590-7C3AED?style=flat-square&labelColor=0B0E14)
-![loc](https://img.shields.io/badge/LOC-~635k-22D3EE?style=flat-square&labelColor=0B0E14)
-![models](https://img.shields.io/badge/Data_models-311-7C3AED?style=flat-square&labelColor=0B0E14)
-![migrations](https://img.shields.io/badge/Tenant_migrations-194-22D3EE?style=flat-square&labelColor=0B0E14)
-![tests](https://img.shields.io/badge/Tests-14%2C400%2B-7C3AED?style=flat-square&labelColor=0B0E14)
+![files](https://img.shields.io/badge/TS_files-~4%2C960-7C3AED?style=flat-square&labelColor=0B0E14)
+![loc](https://img.shields.io/badge/LOC-~911k-22D3EE?style=flat-square&labelColor=0B0E14)
+![models](https://img.shields.io/badge/Data_models-345-7C3AED?style=flat-square&labelColor=0B0E14)
+![migrations](https://img.shields.io/badge/Tenant_migrations-249-22D3EE?style=flat-square&labelColor=0B0E14)
+![tests](https://img.shields.io/badge/Tests-21%2C000%2B-7C3AED?style=flat-square&labelColor=0B0E14)
 ![langs](https://img.shields.io/badge/Locales-fr_en_es_de-22D3EE?style=flat-square&labelColor=0B0E14)
-![svc](https://img.shields.io/badge/Docker_services-22-7C3AED?style=flat-square&labelColor=0B0E14)
+![svc](https://img.shields.io/badge/Docker_services-23-7C3AED?style=flat-square&labelColor=0B0E14)
 
 <br/>
 
-![cost](https://img.shields.io/badge/Est._rebuild_cost-~3.12M%E2%82%AC-F59E0B?style=flat-square&labelColor=0B0E14)
-![effort](https://img.shields.io/badge/Est._effort-~240_person--months-F59E0B?style=flat-square&labelColor=0B0E14)
+![cost](https://img.shields.io/badge/Est._rebuild_cost-~4.47M%E2%82%AC-F59E0B?style=flat-square&labelColor=0B0E14)
+![effort](https://img.shields.io/badge/Est._effort-~344_person--months-F59E0B?style=flat-square&labelColor=0B0E14)
 
-<sub><i>Payment, security and compliance code is 10 % of the lines and 25 % of that estimate.</i></sub>
+<sub><i>Payment, security and compliance code is 12 % of the lines and 28 % of that estimate.</i></sub>
 
 [![Visit Capibara](https://img.shields.io/badge/▶_capibara.fr-7C3AED?style=for-the-badge&labelColor=0B0E14)](https://capibara.fr)
 [![Forge Network](https://img.shields.io/badge/forgenet.fr-22D3EE?style=for-the-badge&labelColor=0B0E14)](https://forgenet.fr)
+
+</td></tr>
+</table>
+
+<!-- ============== FORGE NETWORK ============== -->
+<table>
+<tr><td width="850" align="center">
+
+### <img src="https://api.iconify.design/lucide/layout-dashboard.svg?color=%237C3AED&height=24" height="24" alt="" /> Forge Network &nbsp;·&nbsp; <sub>forgenet.fr</sub>
+
+*The group's own site, rebuilt this year: its products, a store with licences and downloads, server hosting and certifications.*
+
+![React](https://img.shields.io/badge/React_19-000?style=flat-square&labelColor=0B0E14&logo=react&logoColor=61DAFB)
+![React Router](https://img.shields.io/badge/React_Router_7-000?style=flat-square&labelColor=0B0E14&logo=reactrouter&logoColor=CA4245)
+![Vite](https://img.shields.io/badge/Vite_6-000?style=flat-square&labelColor=0B0E14&logo=vite&logoColor=646CFF)
+![Express](https://img.shields.io/badge/Express_4-000?style=flat-square&labelColor=0B0E14&logo=express)
+![Prisma](https://img.shields.io/badge/Prisma_6-000?style=flat-square&labelColor=0B0E14&logo=prisma)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-000?style=flat-square&labelColor=0B0E14&logo=postgresql&logoColor=4169E1)
+![Stripe](https://img.shields.io/badge/Stripe-000?style=flat-square&labelColor=0B0E14&logo=stripe&logoColor=635BFF)
+
+**The Cloud** rents out servers with a console, a web file manager and backups in the browser. A
+Cloud Box behaves like a small VPS — root over SSH, your own packages, everything kept across
+restarts — but it isn't a virtual machine: the sandbox refuses the privileges a normal SSH daemon
+needs, so the whole system lives in the one writable volume, runs under proot and brings its own
+SSH server. The one thing it can't do is run Docker.
+
+**Forge Licensing** issues the licence keys for the group's software. Every answer is signed, so an
+application can verify a licence without calling home and a captured answer can't be replayed as a
+valid one. Elipse RSAI runs on it.
+
+<sub>Pages rendered on the server, ~122 KB of gzipped JavaScript on the home page · store with Stripe checkout and automatic licence delivery · downloads that open only to an active licence · OpenCoperLock deploys from its own page, and every server gets an HTTPS address · certification program (27 tracks × 4 levels × 5 real-project briefs) · news feed with RSS</sub>
+
+![models](https://img.shields.io/badge/Data_models-96-7C3AED?style=flat-square&labelColor=0B0E14)
+![loc](https://img.shields.io/badge/LOC-~42k-22D3EE?style=flat-square&labelColor=0B0E14)
+![routes](https://img.shields.io/badge/API_route_files-27-7C3AED?style=flat-square&labelColor=0B0E14)
+![cert](https://img.shields.io/badge/Assessments-540-22D3EE?style=flat-square&labelColor=0B0E14)
+![sig](https://img.shields.io/badge/Licences-signed_%C2%B7_offline--verifiable-7C3AED?style=flat-square&labelColor=0B0E14)
+
+<br/>
+
+![cost](https://img.shields.io/badge/Est._rebuild_cost-~595k%E2%82%AC-F59E0B?style=flat-square&labelColor=0B0E14)
+![effort](https://img.shields.io/badge/Est._effort-~46_person--months-F59E0B?style=flat-square&labelColor=0B0E14)
+
+<sub><i>The highest written/kept ratio on this page, 2.59×: the redesign removed more code than it added.</i></sub>
+
+[![Live](https://img.shields.io/badge/▶_forgenet.fr-7C3AED?style=for-the-badge&labelColor=0B0E14)](https://forgenet.fr)
+[![Console](https://img.shields.io/badge/console.forgenet.fr-22D3EE?style=for-the-badge&labelColor=0B0E14)](https://console.forgenet.fr)
 
 </td></tr>
 </table>
@@ -160,7 +207,7 @@ CRM · French invoicing (Factur-X) · Accounting with FEC export · Shop · Inve
 
 ### <img src="https://api.iconify.design/lucide/bot.svg?color=%237C3AED&height=24" height="24" alt="" /> Marcus &nbsp;·&nbsp; <sub>marcusbot.fr</sub>
 
-<sub><img src="https://api.iconify.design/lucide/circle-pause.svg?color=%2394A3B8&height=12" height="12" alt="" /> Paused for now: it should pick up again, but it needs more time than I have at the moment.</sub>
+<sub><img src="https://api.iconify.design/lucide/circle-pause.svg?color=%2394A3B8&height=12" height="12" alt="" /> Maintenance on hold while I finish Capibara; it picks up again right after.</sub>
 
 *A Discord bot that server owners extend themselves — by drawing what they want, not by writing code.*
 
@@ -192,7 +239,7 @@ by the user when the message fails to send.
 ![cost](https://img.shields.io/badge/Est._rebuild_cost-~783k%E2%82%AC-F59E0B?style=flat-square&labelColor=0B0E14)
 ![effort](https://img.shields.io/badge/Est._effort-~60_person--months-F59E0B?style=flat-square&labelColor=0B0E14)
 
-<sub><i>Least flattering number on this page, and it stays: 2.02× more lines were written than survive. The visual editor was rebuilt more than once.</i></sub>
+<sub><i>Not a flattering number, and it stays: 2.02× more lines were written than survive. The visual editor was rebuilt more than once.</i></sub>
 
 [![Live](https://img.shields.io/badge/▶_marcusbot.fr-7C3AED?style=for-the-badge&labelColor=0B0E14)](https://marcusbot.fr)
 
@@ -229,19 +276,19 @@ it often does.
 
 <sub>Local database with sensitive fields encrypted · devices paired by QR code and a six-digit code read out loud · PDF engine written in Dart, no network · the only outbound call checks the licence and carries no data about anyone · an expired licence drops the app to read-only and never holds the records hostage</sub>
 
-![files](https://img.shields.io/badge/Dart_files-200-7C3AED?style=flat-square&labelColor=0B0E14)
-![loc](https://img.shields.io/badge/LOC-~83k-22D3EE?style=flat-square&labelColor=0B0E14)
-![screens](https://img.shields.io/badge/Screens-49-7C3AED?style=flat-square&labelColor=0B0E14)
-![tests](https://img.shields.io/badge/Test_files-75-22D3EE?style=flat-square&labelColor=0B0E14)
+![files](https://img.shields.io/badge/Dart_files-218-7C3AED?style=flat-square&labelColor=0B0E14)
+![loc](https://img.shields.io/badge/LOC-~100k-22D3EE?style=flat-square&labelColor=0B0E14)
+![screens](https://img.shields.io/badge/Screens-52-7C3AED?style=flat-square&labelColor=0B0E14)
+![tests](https://img.shields.io/badge/Test_files-89-22D3EE?style=flat-square&labelColor=0B0E14)
 ![targets](https://img.shields.io/badge/Targets-Android_%26_Windows-7C3AED?style=flat-square&labelColor=0B0E14)
-![version](https://img.shields.io/badge/Version-1.8.1-22D3EE?style=flat-square&labelColor=0B0E14)
+![version](https://img.shields.io/badge/Version-1.9.2-22D3EE?style=flat-square&labelColor=0B0E14)
 
 <br/>
 
-![cost](https://img.shields.io/badge/Est._rebuild_cost-~372k%E2%82%AC-F59E0B?style=flat-square&labelColor=0B0E14)
-![effort](https://img.shields.io/badge/Est._effort-~29_person--months-F59E0B?style=flat-square&labelColor=0B0E14)
+![cost](https://img.shields.io/badge/Est._rebuild_cost-~441k%E2%82%AC-F59E0B?style=flat-square&labelColor=0B0E14)
+![effort](https://img.shields.io/badge/Est._effort-~34_person--months-F59E0B?style=flat-square&labelColor=0B0E14)
 
-<sub><i>23k lines of tests against 60k lines of app. The rules that decide whether someone is compliant are kept apart from the interface so they can be tested on their own.</i></sub>
+<sub><i>34k lines of tests against 66k lines of app. The rules that decide whether someone is compliant are kept apart from the interface so they can be tested on their own.</i></sub>
 
 [![Download](https://img.shields.io/badge/▶_Download-7C3AED?style=for-the-badge&labelColor=0B0E14)](https://forgenet.fr/telechargements/elipse)
 
@@ -297,73 +344,26 @@ game, and one of them starts a second copy and connects the two.
 </td></tr>
 </table>
 
-<!-- ============== OPUS ============== -->
-<table>
-<tr><td width="850" align="center">
-
-### <img src="https://api.iconify.design/lucide/layout-dashboard.svg?color=%237C3AED&height=24" height="24" alt="" /> OPUS &nbsp;·&nbsp; <sub>forgenet.fr</sub>
-
-<sub><img src="https://api.iconify.design/lucide/circle-pause.svg?color=%2394A3B8&height=12" height="12" alt="" /> Paused for now: it should pick up again, but it needs more time than I have at the moment.</sub>
-
-*The platform Forge Network runs on: client projects and invoicing, server hosting, software licensing and a store.*
-
-![React](https://img.shields.io/badge/React_19-000?style=flat-square&labelColor=0B0E14&logo=react&logoColor=61DAFB)
-![Vite](https://img.shields.io/badge/Vite_6-000?style=flat-square&labelColor=0B0E14&logo=vite&logoColor=646CFF)
-![Express](https://img.shields.io/badge/Express_4-000?style=flat-square&labelColor=0B0E14&logo=express)
-![Prisma](https://img.shields.io/badge/Prisma_6-000?style=flat-square&labelColor=0B0E14&logo=prisma)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-000?style=flat-square&labelColor=0B0E14&logo=postgresql&logoColor=4169E1)
-![Stripe](https://img.shields.io/badge/Stripe-000?style=flat-square&labelColor=0B0E14&logo=stripe&logoColor=635BFF)
-
-**OPUS Cloud** rents out servers with a console, a web file manager and backups in the browser. A
-Cloud Box behaves like a small VPS — SSH, a persistent home directory, your own packages — but it
-isn't a virtual machine: the sandbox refuses the privileges a normal SSH daemon needs, so the box
-ships its own lightweight root filesystem and SSH server instead. Docker doesn't run inside it and
-only the home directory survives a rebuild. Both limits are on the page, not discovered after
-signing up.
-
-**Forge Licensing** issues the licence keys for the group's software. Every answer is signed, so an
-application can verify a licence without calling home and a captured answer can't be replayed as a
-valid one. Elipse RSAI runs on it.
-
-<sub>Client workspace with quotes, invoices and instalment plans · certification program (27 tracks × 4 levels × 5 real-project briefs) · store with Stripe checkout and automatic licence delivery · news feed with RSS</sub>
-
-![models](https://img.shields.io/badge/Data_models-94-7C3AED?style=flat-square&labelColor=0B0E14)
-![loc](https://img.shields.io/badge/LOC-~92k-22D3EE?style=flat-square&labelColor=0B0E14)
-![routes](https://img.shields.io/badge/API_route_files-52-7C3AED?style=flat-square&labelColor=0B0E14)
-![cert](https://img.shields.io/badge/Assessments-540-22D3EE?style=flat-square&labelColor=0B0E14)
-![sig](https://img.shields.io/badge/Licences-signed_%C2%B7_offline--verifiable-7C3AED?style=flat-square&labelColor=0B0E14)
-
-<br/>
-
-![cost](https://img.shields.io/badge/Est._rebuild_cost-~605k%E2%82%AC-F59E0B?style=flat-square&labelColor=0B0E14)
-![effort](https://img.shields.io/badge/Est._effort-~47_person--months-F59E0B?style=flat-square&labelColor=0B0E14)
-
-[![Live](https://img.shields.io/badge/▶_forgenet.fr-7C3AED?style=for-the-badge&labelColor=0B0E14)](https://forgenet.fr)
-[![Console](https://img.shields.io/badge/console.forgenet.fr-22D3EE?style=for-the-badge&labelColor=0B0E14)](https://console.forgenet.fr)
-
-</td></tr>
-</table>
-
 <br/>
 
 ### <img src="https://api.iconify.design/lucide/calculator.svg?color=%237C3AED&height=24" height="24" alt="" />&nbsp; Where those estimates come from
 
 | Project | Lines counted | Effort | Rebuild cost | Written / kept |
 |:---|---:|---:|---:|---:|
-| **Capibara** | 725 488 | 240 person-months | ~3.12 M€ | 1.17× |
+| **Capibara** | 1 012 733 | 344 person-months | ~4.47 M€ | 1.18× |
 | **Fallended** | 357 433 | 76 person-months | ~982 k€ | n/a |
 | **Marcus** | 124 945 | 60 person-months | ~783 k€ | 2.02× |
-| **OPUS** | 103 925 | 47 person-months | ~605 k€ | 1.39× |
-| **Elipse RSAI** | 93 294 | 29 person-months | ~372 k€ | 1.06× |
+| **Forge Network** | 69 841 | 46 person-months | ~595 k€ | 2.59× |
+| **Elipse RSAI** | 110 802 | 34 person-months | ~441 k€ | 1.09× |
 | **OpenCoperLock** | 28 147 | 10 person-months | ~130 k€ | 1.12× |
 
 <sub><b>Not money anyone spent.</b> <i>These estimate what it would cost to <b>rebuild</b> each project from scratch with a senior team at the 2026 French senior rate (~650 €/day) — and they are computed rather than guessed. The script is <a href="tools/estimate.py"><code>tools/estimate.py</code></a> and it runs on any of these repositories.</i></sub>
 
 <sub><b>How.</b> <i>Every file is sorted into a zone — payment, security, compliance, integrations, business logic, interface, data model, infrastructure, tests, docs — and each zone carries its own lines-per-hour rate, because billing code with idempotency, webhooks and reconciliation does not cost what CRUD costs. Blank lines cost nothing, and a comment is billed at the documentation rate rather than at the rate of the code it explains. A Godot project is sorted with its own table: a game has no billing or compliance code, and those keywords would only misfile it — "verify" would put 77 test gates under security. Git history then adds what was written and later rewritten or thrown away, since abandoned work took the same time, and an overhead factor covers what leaves no file behind: architecture, deployment, operations.</i></sub>
 
-<sub><b>A person-month</b> <i>is one person working full time for one month. It is a unit of effort, not a headcount — 240 person-months is roughly what a team of ~60 delivers in four months.</i></sub>
+<sub><b>A person-month</b> <i>is one person working full time for one month. It is a unit of effort, not a headcount — 344 person-months is roughly what a team of ~86 delivers in four months.</i></sub>
 
-<sub><b>Three caveats.</b> <i>The productivity assumption sits at the optimistic end of the published 10–20 lines/hour range, so if these figures are wrong they are low rather than high. On Capibara, payment, security and compliance code is 10 % of the lines but 25 % of the estimate — which is exactly why a flat average would have been worthless here. And Fallended's git history starts with a backup of the whole project on 17 September 2026, so its written/kept ratio can't be measured and its estimate carries almost no rework — one more reason it errs low.</i></sub>
+<sub><b>Three caveats.</b> <i>The productivity assumption sits at the optimistic end of the published 10–20 lines/hour range, so if these figures are wrong they are low rather than high. On Capibara, payment, security and compliance code is 12 % of the lines but 28 % of the estimate — which is exactly why a flat average would have been worthless here. And Fallended's git history starts with a backup of the whole project on 17 September 2026, so its written/kept ratio can't be measured and its estimate carries almost no rework — one more reason it errs low.</i></sub>
 
 </div>
 
@@ -502,17 +502,17 @@ key: **MouseMode** swaps the Windows pointer profile, **AudioSwitcher** changes 
 
 <div align="center">
 
-![TypeScript](https://img.shields.io/badge/TypeScript-66.0_%25-3178C6?style=flat-square&labelColor=0B0E14)
-![GDScript](https://img.shields.io/badge/GDScript-23.2_%25-478CBF?style=flat-square&labelColor=0B0E14)
+![TypeScript](https://img.shields.io/badge/TypeScript-69.1_%25-3178C6?style=flat-square&labelColor=0B0E14)
+![GDScript](https://img.shields.io/badge/GDScript-19.3_%25-478CBF?style=flat-square&labelColor=0B0E14)
 ![Dart](https://img.shields.io/badge/Dart-6.3_%25-0175C2?style=flat-square&labelColor=0B0E14)
-![Prisma](https://img.shields.io/badge/Prisma-0.8_%25-2D3748?style=flat-square&labelColor=0B0E14)
+![HTML / CSS](https://img.shields.io/badge/HTML_%2F_CSS-1.6_%25-E34F26?style=flat-square&labelColor=0B0E14)
 ![SQL](https://img.shields.io/badge/SQL-0.8_%25-4169E1?style=flat-square&labelColor=0B0E14)
-![HTML / CSS](https://img.shields.io/badge/HTML_%2F_CSS-0.7_%25-E34F26?style=flat-square&labelColor=0B0E14)
-![Java](https://img.shields.io/badge/Java-0.7_%25-EA2D2E?style=flat-square&labelColor=0B0E14)
-![Shell](https://img.shields.io/badge/Shell-0.6_%25-4EAA25?style=flat-square&labelColor=0B0E14)
-![Python](https://img.shields.io/badge/Python-0.2_%25-3776AB?style=flat-square&labelColor=0B0E14)
+![Shell](https://img.shields.io/badge/Shell-0.8_%25-4EAA25?style=flat-square&labelColor=0B0E14)
+![Prisma](https://img.shields.io/badge/Prisma-0.7_%25-2D3748?style=flat-square&labelColor=0B0E14)
+![Java](https://img.shields.io/badge/Java-0.6_%25-EA2D2E?style=flat-square&labelColor=0B0E14)
+![Python](https://img.shields.io/badge/Python-0.1_%25-3776AB?style=flat-square&labelColor=0B0E14)
 
-<sub><i>Counted across the nine repositories behind this page — <b>1 322 996 lines</b>, private ones included. Re-derive it with <a href="tools/languages.py"><code>tools/languages.py</code></a>. A GitHub language graph would only see the public repos, which is the smaller half.</i></sub>
+<sub><i>Counted across the nine repositories behind this page — <b>1 591 267 lines</b>, private ones included. Re-derive it with <a href="tools/languages.py"><code>tools/languages.py</code></a>. A GitHub language graph would only see the public repos, which is the smaller half.</i></sub>
 
 </div>
 
@@ -522,7 +522,7 @@ key: **MouseMode** swaps the Windows pointer profile, **AudioSwitcher** changes 
 
 <div align="center">
 
-[![OPUS Certified](https://img.shields.io/badge/OPUS_Certified-Ma%C3%AEtrise_Full--Stack_%C2%B7_DevOps_%C2%B7_Syst%C3%A8mes-7C3AED?style=for-the-badge&labelColor=0B0E14)](https://forgenet.fr/verify/OPUS-2026-Z26F2D)
+[![Forge Network Certified](https://img.shields.io/badge/Forge_Network_Certified-Ma%C3%AEtrise_Full--Stack_%C2%B7_DevOps_%C2%B7_Syst%C3%A8mes-7C3AED?style=for-the-badge&labelColor=0B0E14)](https://forgenet.fr/verify/OPUS-2026-Z26F2D)
 
 <br/>
 
@@ -540,7 +540,7 @@ key: **MouseMode** swaps the Windows pointer profile, **AudioSwitcher** changes 
 
 <br/>
 
-<sub><b>How to read these scores?</b> <i>Each score (out of 10) measures a concrete ability — not theory learned by heart. It reflects the ability to write clean, maintainable code and to handle a production deployment autonomously. Assessments are carried out and approved by OPUS on the basis of real, delivered projects.</i></sub>
+<sub><b>How to read these scores?</b> <i>Each score (out of 10) measures a concrete ability — not theory learned by heart. It reflects the ability to write clean, maintainable code and to handle a production deployment autonomously. Assessments are carried out and approved by Forge Network on the basis of real, delivered projects.</i></sub>
 
 <br/>
 
