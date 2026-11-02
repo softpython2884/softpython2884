@@ -15,7 +15,8 @@ Quatre apports par rapport à une estimation au doigt mouillé :
   4. TYPES DE COMMITS     -> part de feature / debug / doc / refonte.
 
 Un dépôt Godot (project.godot à la racine) est trié avec sa propre table de
-zones : voir GODOT_ZONES plus bas, et pourquoi.
+zones : voir GODOT_ZONES plus bas, et pourquoi. Un mod Minecraft Fabric
+(src/main/resources/fabric.mod.json) aussi : voir MOD_ZONES.
 
 Usage :
     python3 estimate.py <chemin_du_depot> [--nom NOM] [--json fichier.json]
@@ -148,19 +149,51 @@ GENERATED_GODOT = re.compile(
 )
 
 
+# 1ter. Mods Minecraft (Fabric) — détectés par src/main/resources/fabric.mod.json.
+#   Même raison que pour Godot : un mod n'a ni facturation ni authentification,
+#   et la table standard y tombe à faux (« merchant » rangerait le marchand
+#   ambulant en facturation, « guard » le villageois garde en sécurité). Les
+#   scripts Python de tools/ y génèrent du contenu (textures, ruines) : ils
+#   sont comptés comme le jeu, au tarif du code métier, pas de l'outillage.
+# --------------------------------------------------------------------------
+
+MOD_ZONES = [
+    ("docs", r"\.mdx?$|(^|/)docs/.*\.html$"),
+    ("tests", r"(^|/)src/(test|gametest)/"),
+    # Données du jeu : modèles, recettes, langues, réglages.
+    ("config", r"\.(json|json5|mcmeta|properties)$|(^|/)\.gitignore$"),
+    ("infra", r"gradle|(^|/)\.github/|\.(sh|ps1|bat)$"),
+    ("server", r"\.(java|kt|py)$"),
+    ("other", r".*"),
+]
+COMPILED_MOD = [(k, re.compile(pat)) for k, pat in MOD_ZONES]
+
+# Copies de fichiers qui existent déjà ailleurs : jamais comptées.
+GENERATED_MOD = re.compile(
+    r"(^|/)docs/default-config/|"    # copie des réglages que le serveur génère
+    r"-standalone\.html$"            # page déjà comptée, ressources incluses
+)
+
+
 def detect_profile(repo: str) -> str:
-    return "godot" if os.path.isfile(os.path.join(repo, "project.godot")) else "standard"
+    if os.path.isfile(os.path.join(repo, "project.godot")):
+        return "godot"
+    if os.path.isfile(os.path.join(repo, "src", "main", "resources", "fabric.mod.json")):
+        return "mod"
+    return "standard"
 
 
 def is_generated(path: str, profile: str = "standard") -> bool:
     p = path.lower()
-    return bool(GENERATED.search(p)) or (profile == "godot" and bool(GENERATED_GODOT.search(p)))
+    return (bool(GENERATED.search(p))
+            or (profile == "godot" and bool(GENERATED_GODOT.search(p)))
+            or (profile == "mod" and bool(GENERATED_MOD.search(p))))
 
 
 def classify(path: str, profile: str = "standard") -> str:
     p = path.lower()
-    if profile == "godot":
-        for key, rx in COMPILED_GODOT:
+    if profile in ("godot", "mod"):
+        for key, rx in (COMPILED_GODOT if profile == "godot" else COMPILED_MOD):
             if rx.search(p):
                 return key
         return "other"

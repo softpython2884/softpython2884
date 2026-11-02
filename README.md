@@ -96,9 +96,9 @@ Redis/BullMQ documented as the upgrade for horizontal scale instead of required 
 
 ## <img src="https://api.iconify.design/lucide/rocket.svg?color=%237C3AED&height=26" height="26" alt="" />&nbsp; Flagship Work
 
-> Four systems in production and one game. All five are private — client work, products that are
-> sold, and a game whose source isn't ready to publish — so the links go to the live product or the
-> download, and the numbers come from the repositories.
+> Four systems in production, a game and a Minecraft mod. All six are private — client work,
+> products that are sold, and game code that isn't published — so the links go to the live product
+> or the download, and the numbers come from the repositories.
 
 <div align="center">
 
@@ -343,6 +343,51 @@ game, and one of them starts a second copy and connects the two.
 </td></tr>
 </table>
 
+<!-- ============== GUILDY ============== -->
+<table>
+<tr><td width="850" align="center">
+
+### <img src="https://api.iconify.design/lucide/flag.svg?color=%237C3AED&height=24" height="24" alt="" /> Guildy &nbsp;·&nbsp; <sub>private · server-side mod</sub>
+
+*Cooperative survival for Minecraft guilds: plant a flag, hold the base through the night, and put the villagers to work.*
+
+![Java](https://img.shields.io/badge/Java_25-000?style=flat-square&labelColor=0B0E14&logo=openjdk&logoColor=white)
+![Fabric](https://img.shields.io/badge/Fabric_·_Minecraft_26.3-000?style=flat-square&labelColor=0B0E14)
+![Gradle](https://img.shields.io/badge/Gradle-000?style=flat-square&labelColor=0B0E14&logo=gradle&logoColor=white)
+![JUnit](https://img.shields.io/badge/JUnit_5-000?style=flat-square&labelColor=0B0E14&logo=junit5&logoColor=25A162)
+
+A guild founds its base with a flag, the heart it has to defend, and grows its land chunk by chunk
+with more flags. Every night a horde comes for that heart, drawn from seven themes and a little
+harder each time, with elites and a boss under its own bar; some nights are blood nights. In
+between, the villagers work: they sort the chests, dig a real mine down a spiral staircase, and
+raise a `.schem` or `.litematic` from the guild's storage, crafting, smelting or harvesting
+whatever is missing.
+
+The choice everything else follows from: **nothing to install on the player's side**. The mod runs
+on the server alone, so players join with the unmodded game, and every screen is built from what
+vanilla Minecraft can already show: chest menus, titles, the action bar, boss bars, clickable chat.
+The one thing that can't be done that way is a new look — the unique weapons only get their own
+textures through an optional resource pack, and they play the same without it.
+
+<sub>Guild levels up to 100 · 8 ruins in the Overworld and the Nether, each with a boss that comes back harder · unique weapons with serial numbers, never dealt twice to the same guild · 19 single-use spell scrolls · every setting in commented JSON5, reloaded without a restart · LuckPerms permissions</sub>
+
+![files](https://img.shields.io/badge/Java_files-833-7C3AED?style=flat-square&labelColor=0B0E14)
+![loc](https://img.shields.io/badge/LOC-~181k-22D3EE?style=flat-square&labelColor=0B0E14)
+![tests](https://img.shields.io/badge/Tests-1%2C190-7C3AED?style=flat-square&labelColor=0B0E14)
+![quests](https://img.shields.io/badge/Quest_types-17-22D3EE?style=flat-square&labelColor=0B0E14)
+![unique](https://img.shields.io/badge/Unique_items-33-7C3AED?style=flat-square&labelColor=0B0E14)
+![version](https://img.shields.io/badge/Version-1.16.1-22D3EE?style=flat-square&labelColor=0B0E14)
+
+<br/>
+
+![cost](https://img.shields.io/badge/Est._rebuild_cost-~917k%E2%82%AC-F59E0B?style=flat-square&labelColor=0B0E14)
+![effort](https://img.shields.io/badge/Est._effort-~71_person--months-F59E0B?style=flat-square&labelColor=0B0E14)
+
+<sub><i>257 of the 1,190 tests are GameTests: they boot a real Minecraft server and check the mod inside a test world.</i></sub>
+
+</td></tr>
+</table>
+
 <br/>
 
 ### <img src="https://api.iconify.design/lucide/calculator.svg?color=%237C3AED&height=24" height="24" alt="" />&nbsp; Where those estimates come from
@@ -351,6 +396,7 @@ game, and one of them starts a second copy and connects the two.
 |:---|---:|---:|---:|---:|
 | **Capibara** | 1 012 733 | 344 person-months | ~4.47 M€ | 1.18× |
 | **Fallended** | 357 433 | 76 person-months | ~982 k€ | n/a |
+| **Guildy** | 211 756 | 71 person-months | ~917 k€ | 1.11× |
 | **Marcus** | 124 945 | 60 person-months | ~783 k€ | 2.02× |
 | **Forge Network** | 69 841 | 46 person-months | ~595 k€ | 2.59× |
 | **Elipse RSAI** | 110 802 | 34 person-months | ~441 k€ | 1.09× |
@@ -358,7 +404,7 @@ game, and one of them starts a second copy and connects the two.
 
 <sub><b>Not money anyone spent.</b> <i>These estimate what it would cost to <b>rebuild</b> each project from scratch with a senior team at the 2026 French senior rate (~650 €/day) — and they are computed rather than guessed. The script is <a href="tools/estimate.py"><code>tools/estimate.py</code></a> and it runs on any of these repositories.</i></sub>
 
-<sub><b>How.</b> <i>Every file is sorted into a zone — payment, security, compliance, integrations, business logic, interface, data model, infrastructure, tests, docs — and each zone carries its own lines-per-hour rate, because billing code with idempotency, webhooks and reconciliation does not cost what CRUD costs. Blank lines cost nothing, and a comment is billed at the documentation rate rather than at the rate of the code it explains. A Godot project is sorted with its own table: a game has no billing or compliance code, and those keywords would only misfile it — "verify" would put 77 test gates under security. Git history then adds what was written and later rewritten or thrown away, since abandoned work took the same time, and an overhead factor covers what leaves no file behind: architecture, deployment, operations.</i></sub>
+<sub><b>How.</b> <i>Every file is sorted into a zone — payment, security, compliance, integrations, business logic, interface, data model, infrastructure, tests, docs — and each zone carries its own lines-per-hour rate, because billing code with idempotency, webhooks and reconciliation does not cost what CRUD costs. Blank lines cost nothing, and a comment is billed at the documentation rate rather than at the rate of the code it explains. A game is sorted with its own table, one for Godot and one for Minecraft mods: it has no billing or compliance code, and those keywords would only misfile it — "verify" would put 77 test gates under security, and "merchant" a travelling trader under billing. Git history then adds what was written and later rewritten or thrown away, since abandoned work took the same time, and an overhead factor covers what leaves no file behind: architecture, deployment, operations.</i></sub>
 
 <sub><b>A person-month</b> <i>is one person working full time for one month. It is a unit of effort, not a headcount — 344 person-months is roughly what a team of ~86 delivers in four months.</i></sub>
 
@@ -368,31 +414,13 @@ game, and one of them starts a second copy and connects the two.
 
 ---
 
-## <img src="https://api.iconify.design/lucide/package-open.svg?color=%237C3AED&height=26" height="26" alt="" />&nbsp; More projects
+## <img src="https://api.iconify.design/lucide/package-open.svg?color=%237C3AED&height=26" height="26" alt="" />&nbsp; More public repositories
 
 > Experiments, tools and weekend builds. Smaller, and that's the point.
 
 <div align="center">
 
 <table>
-<tr>
-<td colspan="2" width="850" valign="top">
-
-#### <img src="https://api.iconify.design/lucide/flag.svg?color=%237C3AED&height=20" height="20" alt="" /> Guildy &nbsp;·&nbsp; <sub>private</sub>
-
-A Fabric mod for Minecraft 26.3 that runs on the server alone, built with a friend over more than a
-month. Guilds claim land with flags and hold it through nights of hordes that get harder each time —
-PvE only. Players join with an unmodded client, so everything goes through chest menus, titles, boss
-bars and clickable chat. Villagers actually work: they sort the chests, dig a real mine and build a
-schematic out of what's in storage.
-
-<sub>17 quest types · 21 unique weapons and 3 armour sets · 8 ruins guarded by bosses · every setting in commented JSON5, reloaded without a restart</sub>
-
-![Java](https://img.shields.io/badge/Java_25-000?style=flat-square&labelColor=0B0E14&logo=openjdk&logoColor=white)
-![Fabric](https://img.shields.io/badge/Fabric_·_MC_26.3-000?style=flat-square&labelColor=0B0E14)
-
-</td>
-</tr>
 <tr>
 <td width="425" valign="top">
 
@@ -516,17 +544,17 @@ key: **MouseMode** swaps the Windows pointer profile, **AudioSwitcher** changes 
 
 <div align="center">
 
-![TypeScript](https://img.shields.io/badge/TypeScript-69.1_%25-3178C6?style=flat-square&labelColor=0B0E14)
-![GDScript](https://img.shields.io/badge/GDScript-19.3_%25-478CBF?style=flat-square&labelColor=0B0E14)
-![Dart](https://img.shields.io/badge/Dart-6.3_%25-0175C2?style=flat-square&labelColor=0B0E14)
-![HTML / CSS](https://img.shields.io/badge/HTML_%2F_CSS-1.6_%25-E34F26?style=flat-square&labelColor=0B0E14)
-![SQL](https://img.shields.io/badge/SQL-0.8_%25-4169E1?style=flat-square&labelColor=0B0E14)
-![Shell](https://img.shields.io/badge/Shell-0.8_%25-4EAA25?style=flat-square&labelColor=0B0E14)
+![TypeScript](https://img.shields.io/badge/TypeScript-61.4_%25-3178C6?style=flat-square&labelColor=0B0E14)
+![GDScript](https://img.shields.io/badge/GDScript-17.2_%25-478CBF?style=flat-square&labelColor=0B0E14)
+![Java](https://img.shields.io/badge/Java-10.6_%25-EA2D2E?style=flat-square&labelColor=0B0E14)
+![Dart](https://img.shields.io/badge/Dart-5.6_%25-0175C2?style=flat-square&labelColor=0B0E14)
+![HTML / CSS](https://img.shields.io/badge/HTML_%2F_CSS-1.5_%25-E34F26?style=flat-square&labelColor=0B0E14)
+![Python](https://img.shields.io/badge/Python-1.1_%25-3776AB?style=flat-square&labelColor=0B0E14)
+![SQL](https://img.shields.io/badge/SQL-0.7_%25-4169E1?style=flat-square&labelColor=0B0E14)
+![Shell](https://img.shields.io/badge/Shell-0.7_%25-4EAA25?style=flat-square&labelColor=0B0E14)
 ![Prisma](https://img.shields.io/badge/Prisma-0.7_%25-2D3748?style=flat-square&labelColor=0B0E14)
-![Java](https://img.shields.io/badge/Java-0.6_%25-EA2D2E?style=flat-square&labelColor=0B0E14)
-![Python](https://img.shields.io/badge/Python-0.1_%25-3776AB?style=flat-square&labelColor=0B0E14)
 
-<sub><i>Counted across the nine repositories behind this page — <b>1 591 267 lines</b>, private ones included. Re-derive it with <a href="tools/languages.py"><code>tools/languages.py</code></a>. A GitHub language graph would only see the public repos, which is the smaller half.</i></sub>
+<sub><i>Counted across the ten repositories behind this page — <b>1 791 906 lines</b>, private ones included. Re-derive it with <a href="tools/languages.py"><code>tools/languages.py</code></a>. A GitHub language graph would only see the public repos, which is the smaller half.</i></sub>
 
 </div>
 
