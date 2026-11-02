@@ -329,7 +329,6 @@ game, and one of them starts a second copy and connects the two.
 ![gates](https://img.shields.io/badge/Test_gates-77-7C3AED?style=flat-square&labelColor=0B0E14)
 ![blocks](https://img.shields.io/badge/Block_types-102-22D3EE?style=flat-square&labelColor=0B0E14)
 ![species](https://img.shields.io/badge/Creature_species-11-7C3AED?style=flat-square&labelColor=0B0E14)
-![decisions](https://img.shields.io/badge/Written_decisions-92-22D3EE?style=flat-square&labelColor=0B0E14)
 
 <br/>
 
@@ -369,13 +368,31 @@ game, and one of them starts a second copy and connects the two.
 
 ---
 
-## <img src="https://api.iconify.design/lucide/package-open.svg?color=%237C3AED&height=26" height="26" alt="" />&nbsp; More public repositories
+## <img src="https://api.iconify.design/lucide/package-open.svg?color=%237C3AED&height=26" height="26" alt="" />&nbsp; More projects
 
 > Experiments, tools and weekend builds. Smaller, and that's the point.
 
 <div align="center">
 
 <table>
+<tr>
+<td colspan="2" width="850" valign="top">
+
+#### <img src="https://api.iconify.design/lucide/flag.svg?color=%237C3AED&height=20" height="20" alt="" /> Guildy &nbsp;·&nbsp; <sub>private</sub>
+
+A Fabric mod for Minecraft 26.3 that runs on the server alone, built with a friend over more than a
+month. Guilds claim land with flags and hold it through nights of hordes that get harder each time —
+PvE only. Players join with an unmodded client, so everything goes through chest menus, titles, boss
+bars and clickable chat. Villagers actually work: they sort the chests, dig a real mine and build a
+schematic out of what's in storage.
+
+<sub>17 quest types · 21 unique weapons and 3 armour sets · 8 ruins guarded by bosses · every setting in commented JSON5, reloaded without a restart</sub>
+
+![Java](https://img.shields.io/badge/Java_25-000?style=flat-square&labelColor=0B0E14&logo=openjdk&logoColor=white)
+![Fabric](https://img.shields.io/badge/Fabric_·_MC_26.3-000?style=flat-square&labelColor=0B0E14)
+
+</td>
+</tr>
 <tr>
 <td width="425" valign="top">
 
@@ -439,12 +456,9 @@ key: **MouseMode** swaps the Windows pointer profile, **AudioSwitcher** changes 
 
 <sub><b>Also in the lab</b></sub>
 
-[![Betty](https://img.shields.io/badge/Betty-gamified_coding_edu-7C3AED?style=flat-square&labelColor=0B0E14)](https://github.com/softpython2884/Betty)
-[![SimuBourse](https://img.shields.io/badge/SimuBourse-financial_sim-22D3EE?style=flat-square&labelColor=0B0E14)](https://github.com/softpython2884/SimuBourse)
-[![StudyVerse](https://img.shields.io/badge/StudyVerse-AI_notes-7C3AED?style=flat-square&labelColor=0B0E14)](https://github.com/softpython2884/StudyVerse)
-[![CreepOS](https://img.shields.io/badge/CreepOS-horror_fake--OS_game-22D3EE?style=flat-square&labelColor=0B0E14)](https://github.com/softpython2884/CreepOS)
-[![OpenMark-Blog](https://img.shields.io/badge/OpenMark-AI_blogging-7C3AED?style=flat-square&labelColor=0B0E14)](https://github.com/softpython2884/OpenMark-Blog)
-[![Mana-Clash](https://img.shields.io/badge/Mana--Clash-tactical_card_game-22D3EE?style=flat-square&labelColor=0B0E14)](https://github.com/softpython2884/Mana-Clash)
+[![SinkLink](https://img.shields.io/badge/SinkLink-in--browser_photo_editor-7C3AED?style=flat-square&labelColor=0B0E14)](https://github.com/softpython2884/SinkLink)
+[![Mp3Utils](https://img.shields.io/badge/Mp3Utils-DJ_playlists_to_tagged_MP3-22D3EE?style=flat-square&labelColor=0B0E14)](https://github.com/softpython2884/Mp3Utils)
+[![CreepOS](https://img.shields.io/badge/CreepOS-horror_fake--OS_game-7C3AED?style=flat-square&labelColor=0B0E14)](https://github.com/softpython2884/CreepOS)
 
 </div>
 
