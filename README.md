@@ -32,7 +32,7 @@ const nightFury = {
   role:    ["Full-Stack", "SysAdmin", "Data Eng", "OS Builder"],
   founder: "Forge Network · forgenet.fr",
   stack:   ["TypeScript", "Next.js", "React", "Node", "Dart", "Godot", "PostgreSQL", "Docker", "Linux"],
-  now:     ["Capibara (SaaS suite)", "Fallended (voxel arena)", "a custom Linux distro", "a new Grand Projet"],
+  now:     ["Capibara (SaaS suite)", "Fallended (voxel arena)"],
   learning:"Scala & high-performance JVM systems",
 };
 ```
@@ -154,56 +154,13 @@ CRM · French invoicing (Factur-X) · Accounting with FEC export · Shop · Inve
 </td></tr>
 </table>
 
-<!-- ============== OPUS ============== -->
-<table>
-<tr><td width="850" align="center">
-
-### <img src="https://api.iconify.design/lucide/layout-dashboard.svg?color=%237C3AED&height=24" height="24" alt="" /> OPUS &nbsp;·&nbsp; <sub>forgenet.fr</sub>
-
-*The platform Forge Network runs on: client projects and invoicing, server hosting, software licensing and a store.*
-
-![React](https://img.shields.io/badge/React_19-000?style=flat-square&labelColor=0B0E14&logo=react&logoColor=61DAFB)
-![Vite](https://img.shields.io/badge/Vite_6-000?style=flat-square&labelColor=0B0E14&logo=vite&logoColor=646CFF)
-![Express](https://img.shields.io/badge/Express_4-000?style=flat-square&labelColor=0B0E14&logo=express)
-![Prisma](https://img.shields.io/badge/Prisma_6-000?style=flat-square&labelColor=0B0E14&logo=prisma)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-000?style=flat-square&labelColor=0B0E14&logo=postgresql&logoColor=4169E1)
-![Stripe](https://img.shields.io/badge/Stripe-000?style=flat-square&labelColor=0B0E14&logo=stripe&logoColor=635BFF)
-
-**OPUS Cloud** rents out servers with a console, a web file manager and backups in the browser. A
-Cloud Box behaves like a small VPS — SSH, a persistent home directory, your own packages — but it
-isn't a virtual machine: the sandbox refuses the privileges a normal SSH daemon needs, so the box
-ships its own lightweight root filesystem and SSH server instead. Docker doesn't run inside it and
-only the home directory survives a rebuild. Both limits are on the page, not discovered after
-signing up.
-
-**Forge Licensing** issues the licence keys for the group's software. Every answer is signed, so an
-application can verify a licence without calling home and a captured answer can't be replayed as a
-valid one. Elipse RSAI runs on it.
-
-<sub>Client workspace with quotes, invoices and instalment plans · certification program (27 tracks × 4 levels × 5 real-project briefs) · store with Stripe checkout and automatic licence delivery · news feed with RSS</sub>
-
-![models](https://img.shields.io/badge/Data_models-94-7C3AED?style=flat-square&labelColor=0B0E14)
-![loc](https://img.shields.io/badge/LOC-~92k-22D3EE?style=flat-square&labelColor=0B0E14)
-![routes](https://img.shields.io/badge/API_route_files-52-7C3AED?style=flat-square&labelColor=0B0E14)
-![cert](https://img.shields.io/badge/Assessments-540-22D3EE?style=flat-square&labelColor=0B0E14)
-![sig](https://img.shields.io/badge/Licences-signed_%C2%B7_offline--verifiable-7C3AED?style=flat-square&labelColor=0B0E14)
-
-<br/>
-
-![cost](https://img.shields.io/badge/Est._rebuild_cost-~605k%E2%82%AC-F59E0B?style=flat-square&labelColor=0B0E14)
-![effort](https://img.shields.io/badge/Est._effort-~47_person--months-F59E0B?style=flat-square&labelColor=0B0E14)
-
-[![Live](https://img.shields.io/badge/▶_forgenet.fr-7C3AED?style=for-the-badge&labelColor=0B0E14)](https://forgenet.fr)
-[![Console](https://img.shields.io/badge/console.forgenet.fr-22D3EE?style=for-the-badge&labelColor=0B0E14)](https://console.forgenet.fr)
-
-</td></tr>
-</table>
-
 <!-- ============== MARCUS ============== -->
 <table>
 <tr><td width="850" align="center">
 
 ### <img src="https://api.iconify.design/lucide/bot.svg?color=%237C3AED&height=24" height="24" alt="" /> Marcus &nbsp;·&nbsp; <sub>marcusbot.fr</sub>
+
+<sub><img src="https://api.iconify.design/lucide/circle-pause.svg?color=%2394A3B8&height=12" height="12" alt="" /> Paused for now: it should pick up again, but it needs more time than I have at the moment.</sub>
 
 *A Discord bot that server owners extend themselves — by drawing what they want, not by writing code.*
 
@@ -340,6 +297,53 @@ game, and one of them starts a second copy and connects the two.
 </td></tr>
 </table>
 
+<!-- ============== OPUS ============== -->
+<table>
+<tr><td width="850" align="center">
+
+### <img src="https://api.iconify.design/lucide/layout-dashboard.svg?color=%237C3AED&height=24" height="24" alt="" /> OPUS &nbsp;·&nbsp; <sub>forgenet.fr</sub>
+
+<sub><img src="https://api.iconify.design/lucide/circle-pause.svg?color=%2394A3B8&height=12" height="12" alt="" /> Paused for now: it should pick up again, but it needs more time than I have at the moment.</sub>
+
+*The platform Forge Network runs on: client projects and invoicing, server hosting, software licensing and a store.*
+
+![React](https://img.shields.io/badge/React_19-000?style=flat-square&labelColor=0B0E14&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite_6-000?style=flat-square&labelColor=0B0E14&logo=vite&logoColor=646CFF)
+![Express](https://img.shields.io/badge/Express_4-000?style=flat-square&labelColor=0B0E14&logo=express)
+![Prisma](https://img.shields.io/badge/Prisma_6-000?style=flat-square&labelColor=0B0E14&logo=prisma)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-000?style=flat-square&labelColor=0B0E14&logo=postgresql&logoColor=4169E1)
+![Stripe](https://img.shields.io/badge/Stripe-000?style=flat-square&labelColor=0B0E14&logo=stripe&logoColor=635BFF)
+
+**OPUS Cloud** rents out servers with a console, a web file manager and backups in the browser. A
+Cloud Box behaves like a small VPS — SSH, a persistent home directory, your own packages — but it
+isn't a virtual machine: the sandbox refuses the privileges a normal SSH daemon needs, so the box
+ships its own lightweight root filesystem and SSH server instead. Docker doesn't run inside it and
+only the home directory survives a rebuild. Both limits are on the page, not discovered after
+signing up.
+
+**Forge Licensing** issues the licence keys for the group's software. Every answer is signed, so an
+application can verify a licence without calling home and a captured answer can't be replayed as a
+valid one. Elipse RSAI runs on it.
+
+<sub>Client workspace with quotes, invoices and instalment plans · certification program (27 tracks × 4 levels × 5 real-project briefs) · store with Stripe checkout and automatic licence delivery · news feed with RSS</sub>
+
+![models](https://img.shields.io/badge/Data_models-94-7C3AED?style=flat-square&labelColor=0B0E14)
+![loc](https://img.shields.io/badge/LOC-~92k-22D3EE?style=flat-square&labelColor=0B0E14)
+![routes](https://img.shields.io/badge/API_route_files-52-7C3AED?style=flat-square&labelColor=0B0E14)
+![cert](https://img.shields.io/badge/Assessments-540-22D3EE?style=flat-square&labelColor=0B0E14)
+![sig](https://img.shields.io/badge/Licences-signed_%C2%B7_offline--verifiable-7C3AED?style=flat-square&labelColor=0B0E14)
+
+<br/>
+
+![cost](https://img.shields.io/badge/Est._rebuild_cost-~605k%E2%82%AC-F59E0B?style=flat-square&labelColor=0B0E14)
+![effort](https://img.shields.io/badge/Est._effort-~47_person--months-F59E0B?style=flat-square&labelColor=0B0E14)
+
+[![Live](https://img.shields.io/badge/▶_forgenet.fr-7C3AED?style=for-the-badge&labelColor=0B0E14)](https://forgenet.fr)
+[![Console](https://img.shields.io/badge/console.forgenet.fr-22D3EE?style=for-the-badge&labelColor=0B0E14)](https://console.forgenet.fr)
+
+</td></tr>
+</table>
+
 <br/>
 
 ### <img src="https://api.iconify.design/lucide/calculator.svg?color=%237C3AED&height=24" height="24" alt="" />&nbsp; Where those estimates come from
@@ -443,18 +447,6 @@ key: **MouseMode** swaps the Windows pointer profile, **AudioSwitcher** changes 
 [![Mana-Clash](https://img.shields.io/badge/Mana--Clash-tactical_card_game-22D3EE?style=flat-square&labelColor=0B0E14)](https://github.com/softpython2884/Mana-Clash)
 
 </div>
-
----
-
-## <img src="https://api.iconify.design/lucide/monitor.svg?color=%237C3AED&height=26" height="26" alt="" />&nbsp; Custom Linux distribution &nbsp;·&nbsp; <sub>unfinished, nothing to download</sub>
-
-The least finished thing on this page, and the only one with no artifact behind it: no installer, no
-release, no repository yet. The target is a distribution built against the bare kernel — its own
-window manager, session, package and file managers — rather than a theme over an existing desktop,
-aiming for Arch-level configurability without Arch-level setup.
-
-It's here because it's where a large share of my time goes, not because it's usable. Treat it as a
-statement of intent until there's something to install.
 
 ---
 
