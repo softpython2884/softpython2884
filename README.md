@@ -459,15 +459,16 @@ gamerule switches so it can't be used to grief a server.
 <tr>
 <td width="425" valign="top">
 
-#### <img src="https://api.iconify.design/lucide/gamepad-2.svg?color=%237C3AED&height=20" height="20" alt="" /> [Macro](https://github.com/softpython2884/Macro)
+#### <img src="https://api.iconify.design/lucide/aperture.svg?color=%237C3AED&height=20" height="20" alt="" /> [SinkLink](https://github.com/softpython2884/SinkLink)
 
-An older one. A console-style layer for the TV, navigable entirely with an Xbox controller, that
-launches local games and media — bridged to Windows through a Python hotkey listener.
+A photo editor that runs entirely in the browser: the ease of Snapseed with the precision of a raw
+developer. Point, brush and gradient local edits, curves, HDR, depth of field — rendered with WebGL 2
+shaders, no framework, and the photo never leaves the machine.
 
-![Next](https://img.shields.io/badge/Next.js-000?style=flat-square&labelColor=0B0E14&logo=nextdotjs)
-![Python](https://img.shields.io/badge/Python-000?style=flat-square&labelColor=0B0E14&logo=python&logoColor=3776AB)
+![JavaScript](https://img.shields.io/badge/JavaScript-000?style=flat-square&labelColor=0B0E14&logo=javascript&logoColor=F7DF1E)
+![WebGL](https://img.shields.io/badge/WebGL_2-000?style=flat-square&labelColor=0B0E14&logo=webgl&logoColor=white)
 
-[![Repo](https://img.shields.io/badge/Code-181717?style=flat-square&labelColor=0B0E14&logo=github)](https://github.com/softpython2884/Macro)
+[![Repo](https://img.shields.io/badge/Code-181717?style=flat-square&labelColor=0B0E14&logo=github)](https://github.com/softpython2884/SinkLink)
 
 </td>
 <td width="425" valign="top">
@@ -489,7 +490,7 @@ key: **MouseMode** swaps the Windows pointer profile, **AudioSwitcher** changes 
 
 <sub><b>Also in the lab</b></sub>
 
-[![SinkLink](https://img.shields.io/badge/SinkLink-in--browser_photo_editor-7C3AED?style=flat-square&labelColor=0B0E14)](https://github.com/softpython2884/SinkLink)
+[![Macro](https://img.shields.io/badge/Macro-controller--driven_TV_launcher-7C3AED?style=flat-square&labelColor=0B0E14)](https://github.com/softpython2884/Macro)
 [![Mp3Utils](https://img.shields.io/badge/Mp3Utils-DJ_playlists_to_tagged_MP3-22D3EE?style=flat-square&labelColor=0B0E14)](https://github.com/softpython2884/Mp3Utils)
 [![CreepOS](https://img.shields.io/badge/CreepOS-horror_fake--OS_game-7C3AED?style=flat-square&labelColor=0B0E14)](https://github.com/softpython2884/CreepOS)
 
