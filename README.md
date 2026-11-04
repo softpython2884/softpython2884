@@ -39,10 +39,11 @@ const nightFury = {
 
 ---
 
-## <img src="https://api.iconify.design/lucide/shield.svg?color=%237C3AED&height=26" height="26" alt="" />&nbsp; OpenCoperLock &nbsp;·&nbsp; <sub>the one you can read</sub>
+## <img src="https://api.iconify.design/lucide/shield.svg?color=%237C3AED&height=26" height="26" alt="" />&nbsp; OpenCoperLock &nbsp;·&nbsp; <sub>the open-source one</sub>
 
-> My main open-source project, and the only place where the claims on this page can be checked
-> against the source. Everything after it is private, so start here.
+> My main open-source project. Most of the work below is private, so this is where the claims on
+> this page can be checked against the source — along with Guildy, further down, whose code is
+> public too.
 
 <div align="center">
 
@@ -96,9 +97,10 @@ Redis/BullMQ documented as the upgrade for horizontal scale instead of required 
 
 ## <img src="https://api.iconify.design/lucide/rocket.svg?color=%237C3AED&height=26" height="26" alt="" />&nbsp; Flagship Work
 
-> Four systems in production, a game and a Minecraft mod. All six are private — client work,
-> products that are sold, and game code that isn't published — so the links go to the live product
-> or the download, and the numbers come from the repositories.
+> Four systems in production, a game and a Minecraft mod. The mod's code is public; the other five
+> are private — client work, products that are sold, and a game whose source isn't ready to
+> publish — so their links go to the live product or the download, and the numbers come from the
+> repositories.
 
 <div align="center">
 
@@ -347,7 +349,7 @@ game, and one of them starts a second copy and connects the two.
 <table>
 <tr><td width="850" align="center">
 
-### <img src="https://api.iconify.design/lucide/flag.svg?color=%237C3AED&height=24" height="24" alt="" /> Guildy &nbsp;·&nbsp; <sub>private · server-side mod</sub>
+### <img src="https://api.iconify.design/lucide/flag.svg?color=%237C3AED&height=24" height="24" alt="" /> Guildy &nbsp;·&nbsp; <sub>source available · server-side mod</sub>
 
 *Cooperative survival for Minecraft guilds: plant a flag, hold the base through the night, and put the villagers to work.*
 
@@ -384,6 +386,9 @@ textures through an optional resource pack, and they play the same without it.
 ![effort](https://img.shields.io/badge/Est._effort-~71_person--months-F59E0B?style=flat-square&labelColor=0B0E14)
 
 <sub><i>257 of the 1,190 tests are GameTests: they boot a real Minecraft server and check the mod inside a test world.</i></sub>
+
+[![Code](https://img.shields.io/badge/▶_Source_code-7C3AED?style=for-the-badge&labelColor=0B0E14)](https://github.com/softpython2884/Guildy)
+[![Download](https://img.shields.io/badge/Download_%C2%B7_latest_release-22D3EE?style=for-the-badge&labelColor=0B0E14)](https://github.com/softpython2884/Guildy/releases/latest)
 
 </td></tr>
 </table>
