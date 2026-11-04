@@ -459,7 +459,7 @@ gamerule switches so it can't be used to grief a server.
 <tr>
 <td width="425" valign="top">
 
-#### <img src="https://api.iconify.design/lucide/aperture.svg?color=%237C3AED&height=20" height="20" alt="" /> [SinkLink](https://github.com/softpython2884/SinkLink)
+#### <img src="assets/icons/aperture.svg" height="20" alt="" /> [SinkLink](https://github.com/softpython2884/SinkLink)
 
 A photo editor that runs entirely in the browser: the ease of Snapseed with the precision of a raw
 developer. Point, brush and gradient local edits, curves, HDR, depth of field — rendered with WebGL 2
